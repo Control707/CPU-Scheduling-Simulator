@@ -1,0 +1,3790 @@
+CPU SCHEDULING SIMULATOR - COMPREHENSIVE TEST RESULTS
+OwlTech Industries - Performance Optimization Division
+======================================================
+
+
+>>> TEST: Small Set - CPU-Bound
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:42:45 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P3	2	64	3		0	64		0
+P2	3	25	5		63	88		63
+P5	9	72	6		82	154		82
+P1	11	93	4		152	245		152
+P4	12	72	1		244	316		244
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      108.20
+Average Turnaround Time:   173.40
+Average Response Time:     108.20
+CPU Utilization:           99.39%
+Throughput:                0.0152 processes/unit
+Total Execution Time:      328 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:42:45 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	11	93	4		224	317		224
+P2	3	25	5		63	88		63
+P3	2	64	3		0	64		0
+P4	12	72	1		79	151		79
+P5	9	72	6		154	226		154
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      104.00
+Average Turnaround Time:   169.20
+Average Response Time:     104.00
+CPU Utilization:           99.39%
+Throughput:                0.0152 processes/unit
+Total Execution Time:      328 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:42:45 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	11	93	4		127	220		127
+P2	3	25	5		228	253		228
+P3	2	64	3		0	64		0
+P4	12	72	1		54	126		54
+P5	9	72	6		247	319		247
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      131.20
+Average Turnaround Time:   196.40
+Average Response Time:     131.20
+CPU Utilization:           99.39%
+Throughput:                0.0152 processes/unit
+Total Execution Time:      328 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:42:45 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	11	93	4		224	317		11
+P2	3	25	5		91	116		3
+P3	2	64	3		193	257		0
+P4	12	72	1		223	295		14
+P5	9	72	6		218	290		5
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      189.80
+Average Turnaround Time:   255.00
+Average Response Time:     6.60
+CPU Utilization:           99.39%
+Throughput:                0.0152 processes/unit
+Total Execution Time:      328 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:42:45 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	11	93	4		224	317		224
+P2	3	25	5		0	25		0
+P3	2	64	3		25	89		0
+P4	12	72	1		79	151		79
+P5	9	72	6		154	226		154
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      96.40
+Average Turnaround Time:   161.60
+Average Response Time:     91.40
+CPU Utilization:           99.39%
+Throughput:                0.0152 processes/unit
+Total Execution Time:      328 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:42:45 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	11	93	4		214	307		1
+P2	3	25	5		71	96		1
+P3	2	64	3		211	275		0
+P4	12	72	1		244	316		2
+P5	9	72	6		206	278		1
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      189.20
+Average Turnaround Time:   254.40
+Average Response Time:     1.00
+CPU Utilization:           99.39%
+Throughput:                0.0152 processes/unit
+Total Execution Time:      328 time units
+
+
+
+>>> TEST: Small Set - I/O-Bound
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:42:48 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	7	9	6		0	9		0
+P4	8	2	3		8	10		8
+P3	14	4	2		4	8		4
+P5	16	9	2		6	15		6
+P2	19	1	7		12	13		12
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      6.00
+Average Turnaround Time:   11.00
+Average Response Time:     6.00
+CPU Utilization:           78.12%
+Throughput:                0.1562 processes/unit
+Total Execution Time:      32 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:42:48 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	7	9	6		0	9		0
+P2	19	1	7		3	4		3
+P3	14	4	2		4	8		4
+P4	8	2	3		8	10		8
+P5	16	9	2		7	16		7
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      4.40
+Average Turnaround Time:   9.40
+Average Response Time:     4.40
+CPU Utilization:           78.12%
+Throughput:                0.1562 processes/unit
+Total Execution Time:      32 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:42:48 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	7	9	6		0	9		0
+P2	19	1	7		12	13		12
+P3	14	4	2		2	6		2
+P4	8	2	3		21	23		21
+P5	16	9	2		4	13		4
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      7.80
+Average Turnaround Time:   12.80
+Average Response Time:     7.80
+CPU Utilization:           78.12%
+Throughput:                0.1562 processes/unit
+Total Execution Time:      32 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:42:48 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	7	9	6		10	19		0
+P2	19	1	7		7	8		7
+P3	14	4	2		3	7		3
+P4	8	2	3		3	5		3
+P5	16	9	2		7	16		5
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      6.00
+Average Turnaround Time:   11.00
+Average Response Time:     3.60
+CPU Utilization:           78.12%
+Throughput:                0.1562 processes/unit
+Total Execution Time:      32 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:42:48 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	7	9	6		2	11		0
+P2	19	1	7		0	1		0
+P3	14	4	2		5	9		4
+P4	8	2	3		0	2		0
+P5	16	9	2		7	16		7
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      2.80
+Average Turnaround Time:   7.80
+Average Response Time:     2.20
+CPU Utilization:           78.12%
+Throughput:                0.1562 processes/unit
+Total Execution Time:      32 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:42:48 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	7	9	6		13	22		0
+P2	19	1	7		0	1		0
+P3	14	4	2		4	8		1
+P4	8	2	3		1	3		1
+P5	16	9	2		7	16		1
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      5.00
+Average Turnaround Time:   10.00
+Average Response Time:     0.60
+CPU Utilization:           78.12%
+Throughput:                0.1562 processes/unit
+Total Execution Time:      32 time units
+
+
+
+>>> TEST: Small Set - Mixed
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:42:52 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P5	0	2	1		0	2		0
+P3	6	10	1		0	10		0
+P1	8	20	7		8	28		8
+P2	13	49	4		23	72		23
+P4	18	32	9		67	99		67
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      19.60
+Average Turnaround Time:   42.20
+Average Response Time:     19.60
+CPU Utilization:           96.58%
+Throughput:                0.0427 processes/unit
+Total Execution Time:      117 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:42:52 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	8	20	7		8	28		8
+P2	13	49	4		55	104		55
+P3	6	10	1		0	10		0
+P4	18	32	9		18	50		18
+P5	0	2	1		0	2		0
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      16.20
+Average Turnaround Time:   38.80
+Average Response Time:     16.20
+CPU Utilization:           96.58%
+Throughput:                0.0427 processes/unit
+Total Execution Time:      117 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:42:52 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	8	20	7		57	77		57
+P2	13	49	4		3	52		3
+P3	6	10	1		0	10		0
+P4	18	32	9		67	99		67
+P5	0	2	1		0	2		0
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      25.40
+Average Turnaround Time:   48.00
+Average Response Time:     25.40
+CPU Utilization:           96.58%
+Throughput:                0.0427 processes/unit
+Total Execution Time:      117 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:42:52 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	8	20	7		36	56		2
+P2	13	49	4		55	104		5
+P3	6	10	1		16	26		0
+P4	18	32	9		50	82		8
+P5	0	2	1		0	2		0
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      31.40
+Average Turnaround Time:   54.00
+Average Response Time:     3.00
+CPU Utilization:           96.58%
+Throughput:                0.0427 processes/unit
+Total Execution Time:      117 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:42:52 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	8	20	7		8	28		8
+P2	13	49	4		55	104		55
+P3	6	10	1		0	10		0
+P4	18	32	9		18	50		18
+P5	0	2	1		0	2		0
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      16.20
+Average Turnaround Time:   38.80
+Average Response Time:     16.20
+CPU Utilization:           96.58%
+Throughput:                0.0427 processes/unit
+Total Execution Time:      117 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:42:52 2025
+Number of Processes: 5
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	8	20	7		36	56		0
+P2	13	49	4		53	102		1
+P3	6	10	1		18	28		0
+P4	18	32	9		67	99		2
+P5	0	2	1		0	2		0
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      34.80
+Average Turnaround Time:   57.40
+Average Response Time:     0.60
+CPU Utilization:           96.58%
+Throughput:                0.0427 processes/unit
+Total Execution Time:      117 time units
+
+
+
+>>> TEST: Medium Set - CPU-Bound
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:42:58 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P12	0	71	10		0	71		0
+P15	0	45	7		71	116		71
+P16	1	80	1		115	195		115
+P2	4	79	4		192	271		192
+P6	6	87	4		269	356		269
+P18	7	77	10		355	432		355
+P4	9	37	7		430	467		430
+P11	9	28	2		467	495		467
+P14	11	84	8		493	577		493
+P9	12	50	3		576	626		576
+P3	15	44	8		623	667		623
+P10	15	46	5		667	713		667
+P13	15	26	7		713	739		713
+P1	16	94	2		738	832		738
+P7	17	91	9		831	922		831
+P8	17	97	10		922	1019		922
+P5	18	55	4		1018	1073		1018
+P17	18	87	10		1073	1160		1073
+P20	18	97	6		1160	1257		1160
+P19	19	65	1		1256	1321		1256
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      598.45
+Average Turnaround Time:   665.45
+Average Response Time:     598.45
+CPU Utilization:           100.00%
+Throughput:                0.0149 processes/unit
+Total Execution Time:      1340 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:42:58 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	16	94	2		1036	1130		1036
+P2	4	79	4		540	619		540
+P3	15	44	8		121	165		121
+P4	9	37	7		90	127		90
+P5	18	55	4		258	313		258
+P6	6	87	4		781	868		781
+P7	17	91	9		944	1035		944
+P8	17	97	10		1129	1226		1129
+P9	12	50	3		214	264		214
+P10	15	46	5		165	211		165
+P11	9	28	2		62	90		62
+P12	0	71	10		396	467		396
+P13	15	26	7		30	56		30
+P14	11	84	8		692	776		692
+P15	0	45	7		0	45		0
+P16	1	80	1		622	702		622
+P17	18	87	10		856	943		856
+P18	7	77	10		460	537		460
+P19	19	65	1		312	377		312
+P20	18	97	6		1225	1322		1225
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      496.65
+Average Turnaround Time:   563.65
+Average Response Time:     496.65
+CPU Utilization:           100.00%
+Throughput:                0.0149 processes/unit
+Total Execution Time:      1340 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:42:58 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	16	94	2		174	268		174
+P2	4	79	4		358	437		358
+P3	15	44	8		774	818		774
+P4	9	37	7		717	754		717
+P5	18	55	4		423	478		423
+P6	6	87	4		490	577		490
+P7	17	91	9		900	991		900
+P8	17	97	10		991	1088		991
+P9	12	50	3		300	350		300
+P10	15	46	5		568	614		568
+P11	9	28	2		275	303		275
+P12	0	71	10		1105	1176		1105
+P13	15	26	7		748	774		748
+P14	11	84	8		822	906		822
+P15	0	45	7		0	45		0
+P16	1	80	1		44	124		44
+P17	18	87	10		1158	1245		1158
+P18	7	77	10		1256	1333		1256
+P19	19	65	1		106	171		106
+P20	18	97	6		611	708		611
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      591.00
+Average Turnaround Time:   658.00
+Average Response Time:     591.00
+CPU Utilization:           100.00%
+Throughput:                0.0149 processes/unit
+Total Execution Time:      1340 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:42:58 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	16	94	2		1220	1314		36
+P2	4	79	4		1123	1202		0
+P3	15	44	8		761	805		41
+P4	9	37	7		689	726		23
+P5	18	55	4		922	977		54
+P6	6	87	4		1201	1288		14
+P7	17	91	9		1212	1303		59
+P8	17	97	10		1225	1322		63
+P9	12	50	3		866	916		24
+P10	15	46	5		821	867		45
+P11	9	28	2		487	515		31
+P12	0	71	10		1043	1114		0
+P13	15	26	7		505	531		49
+P14	11	84	8		1176	1260		33
+P15	0	45	7		767	812		8
+P16	1	80	1		1137	1217		11
+P17	18	87	10		1204	1291		66
+P18	7	77	10		1155	1232		17
+P19	19	65	1		1067	1132		69
+P20	18	97	6		1225	1322		74
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      990.30
+Average Turnaround Time:   1057.30
+Average Response Time:     35.85
+CPU Utilization:           100.00%
+Throughput:                0.0149 processes/unit
+Total Execution Time:      1340 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:42:58 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	16	94	2		1036	1130		1036
+P2	4	79	4		540	619		540
+P3	15	44	8		121	165		121
+P4	9	37	7		90	127		90
+P5	18	55	4		258	313		258
+P6	6	87	4		781	868		781
+P7	17	91	9		944	1035		944
+P8	17	97	10		1129	1226		1129
+P9	12	50	3		214	264		214
+P10	15	46	5		165	211		165
+P11	9	28	2		0	28		0
+P12	0	71	10		396	467		396
+P13	15	26	7		22	48		22
+P14	11	84	8		692	776		692
+P15	0	45	7		54	99		0
+P16	1	80	1		622	702		622
+P17	18	87	10		856	943		856
+P18	7	77	10		460	537		460
+P19	19	65	1		312	377		312
+P20	18	97	6		1225	1322		1225
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      495.85
+Average Turnaround Time:   562.85
+Average Response Time:     493.15
+CPU Utilization:           100.00%
+Throughput:                0.0149 processes/unit
+Total Execution Time:      1340 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:42:58 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	16	94	2		1103	1197		4
+P2	4	79	4		1036	1115		2
+P3	15	44	8		815	859		7
+P4	9	37	7		730	767		3
+P5	18	55	4		842	897		10
+P6	6	87	4		1051	1138		2
+P7	17	91	9		1134	1225		13
+P8	17	97	10		1223	1320		15
+P9	12	50	3		734	784		4
+P10	15	46	5		829	875		9
+P11	9	28	2		369	397		5
+P12	0	71	10		1013	1084		0
+P13	15	26	7		457	483		11
+P14	11	84	8		1086	1170		7
+P15	0	45	7		596	641		2
+P16	1	80	1		1021	1101		3
+P17	18	87	10		1194	1281		16
+P18	7	77	10		1075	1152		3
+P19	19	65	1		1250	1315		19
+P20	18	97	6		1225	1322		18
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      939.15
+Average Turnaround Time:   1006.15
+Average Response Time:     7.65
+CPU Utilization:           100.00%
+Throughput:                0.0149 processes/unit
+Total Execution Time:      1340 time units
+
+
+
+>>> TEST: Medium Set - I/O-Bound
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:43:00 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P4	1	7	9		0	7		0
+P13	1	6	9		7	13		7
+P12	2	4	4		12	16		12
+P6	3	2	8		15	17		15
+P7	3	4	3		17	21		17
+P8	3	1	7		21	22		21
+P14	3	3	8		22	25		22
+P18	4	2	10		24	26		24
+P19	6	9	4		24	33		24
+P11	9	10	7		30	40		30
+P15	10	4	9		39	43		39
+P2	11	2	2		42	44		42
+P16	11	1	2		44	45		44
+P5	15	8	6		41	49		41
+P10	15	2	10		49	51		49
+P17	15	9	8		51	60		51
+P9	17	8	10		58	66		58
+P1	18	2	5		65	67		65
+P3	19	5	8		66	71		66
+P20	19	6	4		71	77		71
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      34.90
+Average Turnaround Time:   39.65
+Average Response Time:     34.90
+CPU Utilization:           98.96%
+Throughput:                0.2083 processes/unit
+Total Execution Time:      96 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:43:00 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	18	2	5		2	4		2
+P2	11	2	2		2	4		2
+P3	19	5	8		15	20		15
+P4	1	7	9		44	51		44
+P5	15	8	6		37	45		37
+P6	3	2	8		5	7		5
+P7	3	4	3		19	23		19
+P8	3	1	7		4	5		4
+P9	17	8	10		43	51		43
+P10	15	2	10		0	2		0
+P11	9	10	7		77	87		77
+P12	2	4	4		24	28		24
+P13	1	6	9		0	6		0
+P14	3	3	8		14	17		14
+P15	10	4	9		20	24		20
+P16	11	1	2		1	2		1
+P17	15	9	8		53	62		53
+P18	4	2	10		6	8		6
+P19	6	9	4		71	80		71
+P20	19	6	4		20	26		20
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      22.85
+Average Turnaround Time:   27.60
+Average Response Time:     22.85
+CPU Utilization:           98.96%
+Throughput:                0.2083 processes/unit
+Total Execution Time:      96 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:43:00 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	18	2	5		16	18		16
+P2	11	2	2		1	3		1
+P3	19	5	8		36	41		36
+P4	1	7	9		0	7		0
+P5	15	8	6		21	29		21
+P6	3	2	8		57	59		57
+P7	3	4	3		5	9		5
+P8	3	1	7		41	42		41
+P9	17	8	10		67	75		67
+P10	15	2	10		77	79		77
+P11	9	10	7		36	46		36
+P12	2	4	4		13	17		13
+P13	1	6	9		73	79		73
+P14	3	3	8		59	62		59
+P15	10	4	9		70	74		70
+P16	11	1	2		3	4		3
+P17	15	9	8		50	59		50
+P18	4	2	10		90	92		90
+P19	6	9	4		13	22		13
+P20	19	6	4		9	15		9
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      36.85
+Average Turnaround Time:   41.60
+Average Response Time:     36.85
+CPU Utilization:           98.96%
+Throughput:                0.2083 processes/unit
+Total Execution Time:      96 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:43:00 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	18	2	5		35	37		35
+P2	11	2	2		21	23		21
+P3	19	5	8		62	67		36
+P4	1	7	9		20	27		0
+P5	15	8	6		58	66		28
+P6	3	2	8		2	4		2
+P7	3	4	3		4	8		4
+P8	3	1	7		8	9		8
+P9	17	8	10		65	73		42
+P10	15	2	10		32	34		32
+P11	9	10	7		76	86		25
+P12	2	4	4		10	14		10
+P13	1	6	9		62	68		15
+P14	3	3	8		17	20		17
+P15	10	4	9		28	32		28
+P16	11	1	2		31	32		31
+P17	15	9	8		72	81		34
+P18	4	2	10		19	21		19
+P19	6	9	4		78	87		22
+P20	19	6	4		67	73		44
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      38.35
+Average Turnaround Time:   43.10
+Average Response Time:     22.65
+CPU Utilization:           98.96%
+Throughput:                0.2083 processes/unit
+Total Execution Time:      96 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:43:00 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	18	2	5		1	3		1
+P2	11	2	2		1	3		1
+P3	19	5	8		10	15		10
+P4	1	7	9		44	51		44
+P5	15	8	6		37	45		37
+P6	3	2	8		1	3		1
+P7	3	4	3		18	22		18
+P8	3	1	7		0	1		0
+P9	17	8	10		43	51		43
+P10	15	2	10		0	2		0
+P11	9	10	7		77	87		77
+P12	2	4	4		5	9		0
+P13	1	6	9		32	38		0
+P14	3	3	8		13	16		11
+P15	10	4	9		15	19		15
+P16	11	1	2		0	1		0
+P17	15	9	8		53	62		53
+P18	4	2	10		2	4		2
+P19	6	9	4		71	80		71
+P20	19	6	4		20	26		20
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      22.15
+Average Turnaround Time:   26.90
+Average Response Time:     20.20
+CPU Utilization:           98.96%
+Throughput:                0.2083 processes/unit
+Total Execution Time:      96 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:43:00 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	18	2	5		13	15		13
+P2	11	2	2		11	13		11
+P3	19	5	8		53	58		16
+P4	1	7	9		74	81		0
+P5	15	8	6		68	76		10
+P6	3	2	8		0	2		0
+P7	3	4	3		38	42		2
+P8	3	1	7		4	5		4
+P9	17	8	10		71	79		16
+P10	15	2	10		12	14		12
+P11	9	10	7		70	80		9
+P12	2	4	4		41	45		6
+P13	1	6	9		44	50		9
+P14	3	3	8		46	49		9
+P15	10	4	9		48	52		10
+P16	11	1	2		13	14		13
+P17	15	9	8		70	79		14
+P18	4	2	10		10	12		10
+P19	6	9	4		70	79		10
+P20	19	6	4		56	62		18
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      40.60
+Average Turnaround Time:   45.35
+Average Response Time:     9.60
+CPU Utilization:           98.96%
+Throughput:                0.2083 processes/unit
+Total Execution Time:      96 time units
+
+
+
+>>> TEST: Medium Set - Mixed
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:43:07 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P6	1	31	7		0	31		0
+P12	1	39	10		31	70		31
+P16	2	8	6		69	77		69
+P7	3	47	5		76	123		76
+P9	3	39	3		123	162		123
+P18	3	32	1		162	194		162
+P2	4	3	7		193	196		193
+P3	6	5	2		194	199		194
+P8	6	26	5		199	225		199
+P11	6	13	2		225	238		225
+P14	7	42	9		237	279		237
+P5	8	12	8		278	290		278
+P17	10	32	7		288	320		288
+P1	12	14	1		318	332		318
+P4	12	15	3		332	347		332
+P10	12	22	9		347	369		347
+P15	14	14	3		367	381		367
+P13	16	35	4		379	414		379
+P19	16	31	4		414	445		414
+P20	16	14	1		445	459		445
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      233.85
+Average Turnaround Time:   257.55
+Average Response Time:     233.85
+CPU Utilization:           99.79%
+Throughput:                0.0421 processes/unit
+Total Execution Time:      475 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:43:07 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	14	1		61	75		61
+P2	4	3	7		28	31		28
+P3	6	5	2		29	34		29
+P4	12	15	3		103	118		103
+P5	8	12	8		40	52		40
+P6	1	31	7		0	31		0
+P7	3	47	5		425	472		425
+P8	6	26	5		146	172		146
+P9	3	39	3		305	344		305
+P10	12	22	9		118	140		118
+P11	6	13	2		54	67		54
+P12	1	39	10		346	385		346
+P13	16	35	4		257	292		257
+P14	7	42	9		379	421		379
+P15	14	14	3		73	87		73
+P16	2	8	6		38	46		38
+P17	10	32	7		199	231		199
+P18	3	32	1		238	270		238
+P19	16	31	4		162	193		162
+P20	16	14	1		85	99		85
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      154.30
+Average Turnaround Time:   178.00
+Average Response Time:     154.30
+CPU Utilization:           99.79%
+Throughput:                0.0421 processes/unit
+Total Execution Time:      475 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:43:07 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	14	1		20	34		20
+P2	4	3	7		321	324		321
+P3	6	5	2		86	91		86
+P4	12	15	3		98	113		98
+P5	8	12	8		352	364		352
+P6	1	31	7		0	31		0
+P7	3	47	5		241	288		241
+P8	6	26	5		285	311		285
+P9	3	39	3		122	161		122
+P10	12	22	9		360	382		360
+P11	6	13	2		91	104		91
+P12	1	39	10		435	474		435
+P13	16	35	4		162	197		162
+P14	7	42	9		387	429		387
+P15	14	14	3		150	164		150
+P16	2	8	6		315	323		315
+P17	10	32	7		318	350		318
+P18	3	32	1		43	75		43
+P19	16	31	4		197	228		197
+P20	16	14	1		62	76		62
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      202.25
+Average Turnaround Time:   225.95
+Average Response Time:     202.25
+CPU Utilization:           99.79%
+Throughput:                0.0421 processes/unit
+Total Execution Time:      475 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:43:07 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	14	1		230	244		40
+P2	4	3	7		1	4		1
+P3	6	5	2		98	103		26
+P4	12	15	3		232	247		44
+P5	8	12	8		161	173		28
+P6	1	31	7		352	383		0
+P7	3	47	5		425	472		5
+P8	6	26	5		354	380		34
+P9	3	39	3		417	456		9
+P10	12	22	9		319	341		48
+P11	6	13	2		231	244		38
+P12	1	39	10		422	461		15
+P13	16	35	4		405	440		56
+P14	7	42	9		423	465		41
+P15	14	14	3		249	263		62
+P16	2	8	6		90	98		18
+P17	10	32	7		384	416		54
+P18	3	32	1		383	415		21
+P19	16	31	4		390	421		64
+P20	16	14	1		253	267		68
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      290.95
+Average Turnaround Time:   314.65
+Average Response Time:     33.60
+CPU Utilization:           99.79%
+Throughput:                0.0421 processes/unit
+Total Execution Time:      475 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:43:07 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	14	1		31	45		31
+P2	4	3	7		0	3		0
+P3	6	5	2		1	6		1
+P4	12	15	3		73	88		73
+P5	8	12	8		10	22		10
+P6	1	31	7		146	177		0
+P7	3	47	5		425	472		425
+P8	6	26	5		116	142		116
+P9	3	39	3		305	344		305
+P10	12	22	9		88	110		88
+P11	6	13	2		24	37		24
+P12	1	39	10		346	385		346
+P13	16	35	4		257	292		257
+P14	7	42	9		379	421		379
+P15	14	14	3		43	57		43
+P16	2	8	6		8	16		0
+P17	10	32	7		199	231		199
+P18	3	32	1		238	270		238
+P19	16	31	4		162	193		162
+P20	16	14	1		55	69		55
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      145.30
+Average Turnaround Time:   169.00
+Average Response Time:     137.60
+CPU Utilization:           99.79%
+Throughput:                0.0421 processes/unit
+Total Execution Time:      475 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:43:07 2025
+Number of Processes: 20
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	14	1		178	192		15
+P2	4	3	7		59	62		9
+P3	6	5	2		58	63		9
+P4	12	15	3		350	365		17
+P5	8	12	8		168	180		15
+P6	1	31	7		386	417		0
+P7	3	47	5		385	432		0
+P8	6	26	5		312	338		11
+P9	3	39	3		402	441		2
+P10	12	22	9		351	373		19
+P11	6	13	2		155	168		13
+P12	1	39	10		413	452		6
+P13	16	35	4		423	458		19
+P14	7	42	9		418	460		14
+P15	14	14	3		200	214		19
+P16	2	8	6		141	149		7
+P17	10	32	7		427	459		15
+P18	3	32	1		420	452		8
+P19	16	31	4		428	459		21
+P20	16	14	1		222	236		23
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      294.80
+Average Turnaround Time:   318.50
+Average Response Time:     12.10
+CPU Utilization:           99.79%
+Throughput:                0.0421 processes/unit
+Total Execution Time:      475 time units
+
+
+
+>>> TEST: Large Set - CPU-Bound
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:43:11 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P17	0	73	8		0	73		0
+P1	1	95	3		72	167		72
+P9	1	69	4		167	236		167
+P36	1	91	6		236	327		236
+P37	1	64	6		327	391		327
+P7	2	24	2		390	414		390
+P8	2	76	7		414	490		414
+P24	2	80	4		490	570		490
+P29	3	74	7		569	643		569
+P34	4	36	3		642	678		642
+P2	5	53	6		677	730		677
+P12	5	64	10		730	794		730
+P4	6	35	6		793	828		793
+P11	6	21	4		828	849		828
+P18	6	29	5		849	878		849
+P30	6	82	1		878	960		878
+P20	7	69	4		959	1028		959
+P21	7	31	3		1028	1059		1028
+P25	7	59	9		1059	1118		1059
+P31	7	25	9		1118	1143		1118
+P33	7	32	3		1143	1175		1143
+P35	8	20	6		1174	1194		1174
+P16	9	30	5		1193	1223		1193
+P39	9	51	7		1223	1274		1223
+P26	10	68	4		1273	1341		1273
+P14	11	41	3		1340	1381		1340
+P32	11	94	3		1381	1475		1381
+P28	12	80	9		1474	1554		1474
+P27	13	61	9		1553	1614		1553
+P40	13	50	6		1614	1664		1614
+P5	14	85	9		1663	1748		1663
+P3	15	24	3		1747	1771		1747
+P6	15	42	9		1771	1813		1771
+P10	15	77	3		1813	1890		1813
+P13	17	57	7		1888	1945		1888
+P19	17	34	5		1945	1979		1945
+P23	17	42	8		1979	2021		1979
+P15	18	48	9		2020	2068		2020
+P38	18	29	6		2068	2097		2068
+P22	19	48	6		2096	2144		2096
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      1114.60
+Average Turnaround Time:   1168.67
+Average Response Time:     1114.60
+CPU Utilization:           100.00%
+Throughput:                0.0185 processes/unit
+Total Execution Time:      2163 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:43:11 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	1	95	3		2067	2162		2067
+P2	5	53	6		760	813		760
+P3	15	24	3		99	123		99
+P4	6	35	6		366	401		366
+P5	14	85	9		1784	1869		1784
+P6	15	42	9		469	511		469
+P7	2	24	2		136	160		136
+P8	2	76	7		1401	1477		1401
+P9	1	69	4		1190	1259		1190
+P10	15	77	3		1464	1541		1464
+P11	6	21	4		87	108		87
+P12	5	64	10		990	1054		990
+P13	17	57	7		801	858		801
+P14	11	41	3		432	473		432
+P15	18	48	9		550	598		550
+P16	9	30	5		236	266		236
+P17	0	73	8		0	73		0
+P18	6	29	5		181	210		181
+P19	17	34	5		321	355		321
+P20	7	69	4		1253	1322		1253
+P21	7	31	3		268	299		268
+P22	19	48	6		597	645		597
+P23	17	42	8		509	551		509
+P24	2	80	4		1554	1634		1554
+P25	7	59	9		868	927		868
+P26	10	68	4		1113	1181		1113
+P27	13	61	9		921	982		921
+P28	12	80	9		1624	1704		1624
+P29	3	74	7		1326	1400		1326
+P30	6	82	1		1710	1792		1710
+P31	7	25	9		155	180		155
+P32	11	94	3		1963	2057		1963
+P33	7	32	3		299	331		299
+P34	4	36	3		403	439		403
+P35	8	20	6		65	85		65
+P36	1	91	6		1882	1973		1882
+P37	1	64	6		1058	1122		1058
+P38	18	29	6		198	227		198
+P39	9	51	7		705	756		705
+P40	13	50	6		651	701		651
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      811.40
+Average Turnaround Time:   865.48
+Average Response Time:     811.40
+CPU Utilization:           100.00%
+Throughput:                0.0185 processes/unit
+Total Execution Time:      2163 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:43:11 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	1	95	3		178	273		178
+P2	5	53	6		1004	1057		1004
+P3	15	24	3		259	283		259
+P4	6	35	6		1056	1091		1056
+P5	14	85	9		1685	1770		1685
+P6	15	42	9		1769	1811		1769
+P7	2	24	2		153	177		153
+P8	2	76	7		1397	1473		1397
+P9	1	69	4		608	677		608
+P10	15	77	3		283	360		283
+P11	6	21	4		672	693		672
+P12	5	64	10		2094	2158		2094
+P13	17	57	7		1458	1515		1458
+P14	11	41	3		364	405		364
+P15	18	48	9		1808	1856		1808
+P16	9	30	5		907	937		907
+P17	0	73	8		0	73		0
+P18	6	29	5		940	969		940
+P19	17	34	5		958	992		958
+P20	7	69	4		692	761		692
+P21	7	31	3		409	440		409
+P22	19	48	6		1078	1126		1078
+P23	17	42	8		1640	1682		1640
+P24	2	80	4		766	846		766
+P25	7	59	9		1867	1926		1867
+P26	10	68	4		838	906		838
+P27	13	61	9		1920	1981		1920
+P28	12	80	9		1982	2062		1982
+P29	3	74	7		1529	1603		1529
+P30	6	82	1		67	149		67
+P31	7	25	9		2067	2092		2067
+P32	11	94	3		436	530		436
+P33	7	32	3		534	566		534
+P34	4	36	3		569	605		569
+P35	8	20	6		1137	1157		1137
+P36	1	91	6		1164	1255		1164
+P37	1	64	6		1255	1319		1255
+P38	18	29	6		1302	1331		1302
+P39	9	51	7		1597	1648		1597
+P40	13	50	6		1336	1386		1336
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      1044.45
+Average Turnaround Time:   1098.53
+Average Response Time:     1044.45
+CPU Utilization:           100.00%
+Throughput:                0.0185 processes/unit
+Total Execution Time:      2163 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:43:11 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	1	95	3		2061	2156		3
+P2	5	53	6		1711	1764		39
+P3	15	24	3		878	902		109
+P4	6	35	6		1231	1266		42
+P5	14	85	9		2052	2137		114
+P6	15	42	9		1476	1518		117
+P7	2	24	2		738	762		6
+P8	2	76	7		1979	2055		10
+P9	1	69	4		1945	2014		15
+P10	15	77	3		2028	2105		121
+P11	6	21	4		826	847		46
+P12	5	64	10		1852	1916		51
+P13	17	57	7		1819	1876		135
+P14	11	41	3		1459	1500		85
+P15	18	48	9		1589	1637		138
+P16	9	30	5		1137	1167		91
+P17	0	73	8		1955	2028		0
+P18	6	29	5		1112	1141		54
+P19	17	34	5		1295	1329		143
+P20	7	69	4		1953	2022		57
+P21	7	31	3		1116	1147		61
+P22	19	48	6		1592	1640		145
+P23	17	42	8		1504	1546		151
+P24	2	80	4		2013	2093		18
+P25	7	59	9		1790	1849		65
+P26	10	68	4		1916	1984		94
+P27	13	61	9		1880	1941		127
+P28	12	80	9		2019	2099		96
+P29	3	74	7		1986	2060		21
+P30	6	82	1		2038	2120		70
+P31	7	25	9		994	1019		73
+P32	11	94	3		2058	2152		101
+P33	7	32	3		1127	1159		77
+P34	4	36	3		1213	1249		24
+P35	8	20	6		704	724		80
+P36	1	91	6		2062	2153		31
+P37	1	64	6		1848	1912		35
+P38	18	29	6		1190	1219		154
+P39	9	51	7		1662	1713		107
+P40	13	50	6		1673	1723		131
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      1587.03
+Average Turnaround Time:   1641.10
+Average Response Time:     75.92
+CPU Utilization:           100.00%
+Throughput:                0.0185 processes/unit
+Total Execution Time:      2163 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:43:11 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	1	95	3		2067	2162		2067
+P2	5	53	6		689	742		689
+P3	15	24	3		52	76		52
+P4	6	35	6		295	330		295
+P5	14	85	9		1784	1869		1784
+P6	15	42	9		398	440		398
+P7	2	24	2		0	24		0
+P8	2	76	7		1401	1477		1401
+P9	1	69	4		1118	1187		1118
+P10	15	77	3		1464	1541		1464
+P11	6	21	4		40	61		40
+P12	5	64	10		982	1046		982
+P13	17	57	7		730	787		730
+P14	11	41	3		361	402		361
+P15	18	48	9		479	527		479
+P16	9	30	5		165	195		165
+P17	0	73	8		1256	1329		0
+P18	6	29	5		110	139		110
+P19	17	34	5		250	284		250
+P20	7	69	4		1181	1250		1181
+P21	7	31	3		197	228		197
+P22	19	48	6		526	574		526
+P23	17	42	8		438	480		438
+P24	2	80	4		1554	1634		1554
+P25	7	59	9		797	856		797
+P26	10	68	4		1041	1109		1041
+P27	13	61	9		850	911		850
+P28	12	80	9		1624	1704		1624
+P29	3	74	7		1326	1400		1326
+P30	6	82	1		1710	1792		1710
+P31	7	25	9		84	109		84
+P32	11	94	3		1963	2057		1963
+P33	7	32	3		228	260		228
+P34	4	36	3		332	368		332
+P35	8	20	6		18	38		18
+P36	1	91	6		1882	1973		1882
+P37	1	64	6		922	986		0
+P38	18	29	6		127	156		127
+P39	9	51	7		634	685		634
+P40	13	50	6		580	630		580
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      791.38
+Average Turnaround Time:   845.45
+Average Response Time:     736.92
+CPU Utilization:           100.00%
+Throughput:                0.0185 processes/unit
+Total Execution Time:      2163 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:43:11 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	1	95	3		2067	2162		1
+P2	5	53	6		1389	1442		15
+P3	15	24	3		996	1020		47
+P4	6	35	6		1411	1446		16
+P5	14	85	9		2048	2133		42
+P6	15	42	9		1746	1788		49
+P7	2	24	2		576	600		2
+P8	2	76	7		1893	1969		4
+P9	1	69	4		1908	1977		7
+P10	15	77	3		2070	2147		51
+P11	6	21	4		726	747		18
+P12	5	64	10		1972	2036		21
+P13	17	57	7		1788	1845		51
+P14	11	41	3		1592	1633		39
+P15	18	48	9		1814	1862		52
+P16	9	30	5		858	888		35
+P17	0	73	8		1852	1925		0
+P18	6	29	5		749	778		22
+P19	17	34	5		1833	1867		55
+P20	7	69	4		1992	2061		25
+P21	7	31	3		1511	1542		27
+P22	19	48	6		1847	1895		59
+P23	17	42	8		1837	1879		57
+P24	2	80	4		1914	1994		8
+P25	7	59	9		1512	1571		29
+P26	10	68	4		1996	2064		36
+P27	13	61	9		1697	1758		45
+P28	12	80	9		2000	2080		40
+P29	3	74	7		1962	2036		13
+P30	6	82	1		1973	2055		24
+P31	7	25	9		827	852		31
+P32	11	94	3		2019	2113		43
+P33	7	32	3		1541	1573		33
+P34	4	36	3		1384	1420		14
+P35	8	20	6		853	873		34
+P36	1	91	6		1933	2024		11
+P37	1	64	6		1962	2026		13
+P38	18	29	6		1099	1128		58
+P39	9	51	7		1573	1624		39
+P40	13	50	6		1728	1778		47
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      1611.20
+Average Turnaround Time:   1665.28
+Average Response Time:     30.32
+CPU Utilization:           100.00%
+Throughput:                0.0185 processes/unit
+Total Execution Time:      2163 time units
+
+
+
+>>> TEST: Large Set - I/O-Bound
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:43:13 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P9	0	8	10		0	8		0
+P25	0	4	5		8	12		8
+P5	1	4	10		11	15		11
+P14	1	3	3		15	18		15
+P22	1	5	4		18	23		18
+P28	1	7	9		23	30		23
+P30	1	9	5		30	39		30
+P38	1	6	5		39	45		39
+P19	2	5	7		44	49		44
+P40	2	2	7		49	51		49
+P2	3	10	4		50	60		50
+P20	3	9	6		60	69		60
+P37	3	7	4		69	76		69
+P3	4	6	4		75	81		75
+P27	5	7	8		80	87		80
+P32	5	9	6		87	96		87
+P35	5	6	7		96	102		96
+P12	6	4	8		101	105		101
+P7	8	3	7		103	106		103
+P1	9	5	4		105	110		105
+P15	9	2	8		110	112		110
+P16	9	9	1		112	121		112
+P17	9	5	1		121	126		121
+P29	10	1	6		125	126		125
+P18	11	5	4		125	130		125
+P13	12	3	5		129	132		129
+P26	12	3	8		132	135		132
+P31	12	1	2		135	136		135
+P6	13	7	5		135	142		135
+P10	13	5	2		142	147		142
+P11	13	5	5		147	152		147
+P34	13	7	4		152	159		152
+P4	14	2	2		158	160		158
+P21	14	2	5		160	162		160
+P24	14	9	4		162	171		162
+P39	15	6	5		170	176		170
+P8	17	2	4		174	176		174
+P33	17	10	8		176	186		176
+P23	18	8	2		185	193		185
+P36	19	2	4		192	194		192
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      100.12
+Average Turnaround Time:   105.45
+Average Response Time:     100.12
+CPU Utilization:           100.00%
+Throughput:                0.1878 processes/unit
+Total Execution Time:      213 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:43:13 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	9	5	4		29	34		29
+P2	3	10	4		190	200		190
+P3	4	6	4		69	75		69
+P4	14	2	2		2	4		2
+P5	1	4	10		29	33		29
+P6	13	7	5		84	91		84
+P7	8	3	7		5	8		5
+P8	17	2	4		1	3		1
+P9	0	8	10		132	140		132
+P10	13	5	2		30	35		30
+P11	13	5	5		35	40		35
+P12	6	4	8		28	32		28
+P13	12	3	5		12	15		12
+P14	1	3	3		5	8		5
+P15	9	2	8		0	2		0
+P16	9	9	1		139	148		139
+P17	9	5	1		44	49		44
+P18	11	5	4		47	52		47
+P19	2	5	7		61	66		61
+P20	3	9	6		154	163		154
+P21	14	2	5		6	8		6
+P22	1	5	4		67	72		67
+P23	18	8	2		122	130		122
+P24	14	9	4		152	161		152
+P25	0	4	5		0	4		0
+P26	12	3	8		15	18		15
+P27	5	7	8		99	106		99
+P28	1	7	9		110	117		110
+P29	10	1	6		1	2		1
+P30	1	9	5		174	183		174
+P31	12	1	2		0	1		0
+P32	5	9	6		179	188		179
+P33	17	10	8		186	196		186
+P34	13	7	4		105	112		105
+P35	5	6	7		74	80		74
+P36	19	2	4		3	5		3
+P37	3	7	4		122	129		122
+P38	1	6	5		84	90		84
+P39	15	6	5		76	82		76
+P40	2	2	7		2	4		2
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      66.83
+Average Turnaround Time:   72.15
+Average Response Time:     66.83
+CPU Utilization:           100.00%
+Throughput:                0.1878 processes/unit
+Total Execution Time:      213 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:43:13 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	9	5	4		38	43		38
+P2	3	10	4		4	14		4
+P3	4	6	4		48	54		48
+P4	14	2	2		17	19		17
+P5	1	4	10		200	204		200
+P6	13	7	5		82	89		82
+P7	8	3	7		144	147		144
+P8	17	2	4		41	43		41
+P9	0	8	10		205	213		205
+P10	13	5	2		20	25		20
+P11	13	5	5		89	94		89
+P12	6	4	8		162	166		162
+P13	12	3	5		95	98		95
+P14	1	3	3		3	6		3
+P15	9	2	8		163	165		163
+P16	9	9	1		8	17		8
+P17	9	5	1		17	22		17
+P18	11	5	4		49	54		49
+P19	2	5	7		153	158		153
+P20	3	9	6		130	139		130
+P21	14	2	5		96	98		96
+P22	1	5	4		64	69		64
+P23	18	8	2		20	28		20
+P24	14	9	4		56	65		56
+P25	0	4	5		0	4		0
+P26	12	3	8		162	165		162
+P27	5	7	8		172	179		172
+P28	1	7	9		193	200		193
+P29	10	1	6		132	133		132
+P30	1	9	5		111	120		111
+P31	12	1	2		34	35		34
+P32	5	9	6		138	147		138
+P33	17	10	8		167	177		167
+P34	13	7	4		66	73		66
+P35	5	6	7		155	161		155
+P36	19	2	4		67	69		67
+P37	3	7	4		85	92		85
+P38	1	6	5		120	126		120
+P39	15	6	5		112	118		112
+P40	2	2	7		164	166		164
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      94.55
+Average Turnaround Time:   99.88
+Average Response Time:     94.55
+CPU Utilization:           100.00%
+Throughput:                0.1878 processes/unit
+Total Execution Time:      213 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:43:13 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	9	5	4		164	169		71
+P2	3	10	4		164	174		1
+P3	4	6	4		98	104		4
+P4	14	2	2		94	96		94
+P5	1	4	10		11	15		11
+P6	13	7	5		167	174		97
+P7	8	3	7		49	52		49
+P8	17	2	4		119	121		119
+P9	0	8	10		49	57		0
+P10	13	5	2		170	175		101
+P11	13	5	5		171	176		105
+P12	6	4	8		54	58		54
+P13	12	3	5		72	75		72
+P14	1	3	3		15	18		15
+P15	9	2	8		78	80		78
+P16	9	9	1		192	201		80
+P17	9	5	1		169	174		84
+P18	11	5	4		168	173		86
+P19	2	5	7		142	147		17
+P20	3	9	6		195	204		20
+P21	14	2	5		108	110		108
+P22	1	5	4		148	153		26
+P23	18	8	2		176	184		120
+P24	14	9	4		188	197		110
+P25	0	4	5		31	35		31
+P26	12	3	8		89	92		89
+P27	5	7	8		157	164		59
+P28	1	7	9		149	156		34
+P29	10	1	6		94	95		94
+P30	1	9	5		198	207		38
+P31	12	1	2		93	94		93
+P32	5	9	6		195	204		63
+P33	17	10	8		186	196		125
+P34	13	7	4		176	183		115
+P35	5	6	7		164	170		67
+P36	19	2	4		127	129		127
+P37	3	7	4		154	161		40
+P38	1	6	5		159	165		46
+P39	15	6	5		177	183		117
+P40	2	2	7		49	51		49
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      128.97
+Average Turnaround Time:   134.30
+Average Response Time:     67.72
+CPU Utilization:           100.00%
+Throughput:                0.1878 processes/unit
+Total Execution Time:      213 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:43:13 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	9	5	4		29	34		29
+P2	3	10	4		190	200		190
+P3	4	6	4		69	75		69
+P4	14	2	2		0	2		0
+P5	1	4	10		29	33		29
+P6	13	7	5		84	91		84
+P7	8	3	7		7	10		5
+P8	17	2	4		1	3		1
+P9	0	8	10		132	140		132
+P10	13	5	2		30	35		30
+P11	13	5	5		35	40		35
+P12	6	4	8		28	32		28
+P13	12	3	5		12	15		12
+P14	1	3	3		0	3		0
+P15	9	2	8		0	2		0
+P16	9	9	1		139	148		139
+P17	9	5	1		44	49		44
+P18	11	5	4		47	52		47
+P19	2	5	7		61	66		61
+P20	3	9	6		154	163		154
+P21	14	2	5		6	8		6
+P22	1	5	4		67	72		67
+P23	18	8	2		122	130		122
+P24	14	9	4		152	161		152
+P25	0	4	5		5	9		0
+P26	12	3	8		15	18		15
+P27	5	7	8		99	106		99
+P28	1	7	9		110	117		110
+P29	10	1	6		1	2		1
+P30	1	9	5		174	183		174
+P31	12	1	2		0	1		0
+P32	5	9	6		179	188		179
+P33	17	10	8		186	196		186
+P34	13	7	4		105	112		105
+P35	5	6	7		74	80		74
+P36	19	2	4		3	5		3
+P37	3	7	4		122	129		122
+P38	1	6	5		84	90		84
+P39	15	6	5		76	82		76
+P40	2	2	7		2	4		2
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      66.83
+Average Turnaround Time:   72.15
+Average Response Time:     66.65
+CPU Utilization:           100.00%
+Throughput:                0.1878 processes/unit
+Total Execution Time:      213 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:43:13 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	9	5	4		125	130		29
+P2	3	10	4		178	188		17
+P3	4	6	4		103	109		18
+P4	14	2	2		40	42		40
+P5	1	4	10		79	83		1
+P6	13	7	5		183	190		43
+P7	8	3	7		125	128		28
+P8	17	2	4		53	55		53
+P9	0	8	10		175	183		0
+P10	13	5	2		140	145		45
+P11	13	5	5		143	148		47
+P12	6	4	8		113	117		22
+P13	12	3	5		132	135		35
+P14	1	3	3		81	84		3
+P15	9	2	8		31	33		31
+P16	9	9	1		184	193		33
+P17	9	5	1		132	137		35
+P18	11	5	4		134	139		38
+P19	2	5	7		81	86		4
+P20	3	9	6		182	191		21
+P21	14	2	5		48	50		48
+P22	1	5	4		85	90		7
+P23	18	8	2		183	191		54
+P24	14	9	4		183	192		50
+P25	0	4	5		89	93		10
+P26	12	3	8		136	139		39
+P27	5	7	8		184	191		25
+P28	1	7	9		176	183		11
+P29	10	1	6		36	37		36
+P30	1	9	5		177	186		13
+P31	12	1	2		41	42		41
+P32	5	9	6		185	194		27
+P33	17	10	8		186	196		57
+P34	13	7	4		187	194		53
+P35	5	6	7		124	130		29
+P36	19	2	4		57	59		57
+P37	3	7	4		185	192		23
+P38	1	6	5		98	104		15
+P39	15	6	5		152	158		53
+P40	2	2	7		16	18		16
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      123.55
+Average Turnaround Time:   128.88
+Average Response Time:     30.18
+CPU Utilization:           100.00%
+Throughput:                0.1878 processes/unit
+Total Execution Time:      213 time units
+
+
+
+>>> TEST: Large Set - Mixed
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:43:16 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P26	1	37	2		0	37		0
+P30	1	30	1		37	67		37
+P39	1	44	4		67	111		67
+P40	1	11	9		111	122		111
+P3	2	24	5		121	145		121
+P25	2	7	5		145	152		145
+P37	2	4	2		152	156		152
+P1	3	52	3		155	207		155
+P10	3	9	7		207	216		207
+P18	3	27	9		216	243		216
+P21	3	5	7		243	248		243
+P16	4	65	10		247	312		247
+P28	4	3	7		312	315		312
+P2	5	52	5		314	366		314
+P6	5	22	4		366	388		366
+P7	6	37	3		387	424		387
+P23	6	68	10		424	492		424
+P35	7	15	6		491	506		491
+P38	7	30	7		506	536		506
+P12	10	27	9		533	560		533
+P14	10	12	8		560	572		560
+P19	10	3	4		572	575		572
+P22	10	61	3		575	636		575
+P27	10	9	8		636	645		636
+P4	11	14	3		644	658		644
+P20	11	9	8		658	667		658
+P31	11	14	10		667	681		667
+P17	12	42	4		680	722		680
+P32	12	1	8		722	723		722
+P34	13	8	1		722	730		722
+P24	14	55	4		729	784		729
+P33	14	68	7		784	852		784
+P36	15	3	2		851	854		851
+P5	16	61	7		853	914		853
+P11	16	38	7		914	952		914
+P13	17	14	1		951	965		951
+P15	17	5	2		965	970		965
+P9	18	46	4		969	1015		969
+P29	18	68	5		1015	1083		1015
+P8	19	23	3		1082	1105		1082
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      514.58
+Average Turnaround Time:   542.65
+Average Response Time:     514.58
+CPU Utilization:           99.91%
+Throughput:                0.0356 processes/unit
+Total Execution Time:      1124 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:43:16 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	3	52	3		571	623		571
+P2	5	52	5		621	673		621
+P3	2	24	5		190	214		190
+P4	11	14	3		79	93		79
+P5	16	61	7		717	778		717
+P6	5	22	4		142	164		142
+P7	6	37	3		324	361		324
+P8	19	23	3		150	173		150
+P9	18	46	4		510	556		510
+P10	3	9	7		48	57		48
+P11	16	38	7		388	426		388
+P12	10	27	9		206	233		206
+P13	17	14	1		87	101		87
+P14	10	12	8		68	80		68
+P15	17	5	2		9	14		9
+P16	4	65	10		851	916		851
+P17	12	42	4		430	472		430
+P18	3	27	9		240	267		240
+P19	10	3	4		3	6		3
+P20	11	9	8		49	58		49
+P21	3	5	7		28	33		28
+P22	10	61	3		784	845		784
+P23	6	68	10		914	982		914
+P24	14	55	4		664	719		664
+P25	2	7	5		34	41		34
+P26	1	37	2		366	403		366
+P27	10	9	8		59	68		59
+P28	4	3	7		12	15		12
+P29	18	68	5		970	1038		970
+P30	1	30	1		269	299		269
+P31	11	14	10		107	121		107
+P32	12	1	8		0	1		0
+P33	14	68	7		1042	1110		1042
+P34	13	8	1		30	38		30
+P35	7	15	6		125	140		125
+P36	15	3	2		4	7		4
+P37	2	4	2		20	24		20
+P38	7	30	7		293	323		293
+P39	1	44	4		483	527		483
+P40	1	11	9		0	11		0
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      297.18
+Average Turnaround Time:   325.25
+Average Response Time:     297.18
+CPU Utilization:           99.91%
+Throughput:                0.0356 processes/unit
+Total Execution Time:      1124 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:43:16 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	3	52	3		99	151		99
+P2	5	52	5		496	548		496
+P3	2	24	5		551	575		551
+P4	11	14	3		143	157		143
+P5	16	61	7		651	712		651
+P6	5	22	4		284	306		284
+P7	6	37	3		162	199		162
+P8	19	23	3		186	209		186
+P9	18	46	4		293	339		293
+P10	3	9	7		725	734		725
+P11	16	38	7		721	759		721
+P12	10	27	9		902	929		902
+P13	17	14	1		14	28		14
+P14	10	12	8		871	883		871
+P15	17	5	2		36	41		36
+P16	4	65	10		973	1038		973
+P17	12	42	4		345	387		345
+P18	3	27	9		936	963		936
+P19	10	3	4		389	392		389
+P20	11	9	8		882	891		882
+P21	3	5	7		772	777		772
+P22	10	61	3		218	279		218
+P23	6	68	10		1036	1104		1036
+P24	14	55	4		388	443		388
+P25	2	7	5		575	582		575
+P26	1	37	2		57	94		57
+P27	10	9	8		892	901		892
+P28	4	3	7		776	779		776
+P29	18	68	5		566	634		566
+P30	1	30	1		0	30		0
+P31	11	14	10		1099	1113		1099
+P32	12	1	8		899	900		899
+P33	14	68	7		769	837		769
+P34	13	8	1		32	40		32
+P35	7	15	6		645	660		645
+P36	15	3	2		80	83		80
+P37	2	4	2		96	100		96
+P38	7	30	7		844	874		844
+P39	1	44	4		456	500		456
+P40	1	11	9		965	976		965
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      520.60
+Average Turnaround Time:   548.67
+Average Response Time:     520.60
+CPU Utilization:           99.91%
+Throughput:                0.0356 processes/unit
+Total Execution Time:      1124 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:43:16 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	3	52	3		933	985		2
+P2	5	52	5		939	991		4
+P3	2	24	5		565	589		11
+P4	11	14	3		438	452		73
+P5	16	61	7		1026	1087		112
+P6	5	22	4		578	600		12
+P7	6	37	3		845	882		58
+P8	19	23	3		634	657		140
+P9	18	46	4		946	992		145
+P10	3	9	7		297	306		18
+P11	16	38	7		860	898		116
+P12	10	27	9		685	712		78
+P13	17	14	1		460	474		119
+P14	10	12	8		342	354		82
+P15	17	5	2		258	263		123
+P16	4	65	10		1043	1108		21
+P17	12	42	4		894	936		84
+P18	3	27	9		661	688		26
+P19	10	3	4		90	93		90
+P20	11	9	8		349	358		92
+P21	3	5	7		180	185		30
+P22	10	61	3		1031	1092		97
+P23	6	68	10		1042	1110		62
+P24	14	55	4		992	1047		130
+P25	2	7	5		182	189		35
+P26	1	37	2		793	830		0
+P27	10	9	8		355	364		101
+P28	4	3	7		37	40		37
+P29	18	68	5		1038	1106		149
+P30	1	30	1		733	763		43
+P31	11	14	10		452	466		104
+P32	12	1	8		107	108		107
+P33	14	68	7		1038	1106		134
+P34	13	8	1		242	250		107
+P35	7	15	6		431	446		65
+P36	15	3	2		137	140		137
+P37	2	4	2		46	50		46
+P38	7	30	7		745	775		69
+P39	1	44	4		893	937		51
+P40	1	11	9		316	327		55
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      590.83
+Average Turnaround Time:   618.90
+Average Response Time:     74.12
+CPU Utilization:           99.91%
+Throughput:                0.0356 processes/unit
+Total Execution Time:      1124 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:43:16 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	3	52	3		571	623		571
+P2	5	52	5		621	673		621
+P3	2	24	5		190	214		190
+P4	11	14	3		79	93		79
+P5	16	61	7		717	778		717
+P6	5	22	4		142	164		142
+P7	6	37	3		324	361		324
+P8	19	23	3		150	173		150
+P9	18	46	4		510	556		510
+P10	3	9	7		38	47		38
+P11	16	38	7		388	426		388
+P12	10	27	9		206	233		206
+P13	17	14	1		87	101		87
+P14	10	12	8		68	80		68
+P15	17	5	2		4	9		4
+P16	4	65	10		851	916		851
+P17	12	42	4		430	472		430
+P18	3	27	9		240	267		240
+P19	10	3	4		0	3		0
+P20	11	9	8		39	48		39
+P21	3	5	7		10	15		6
+P22	10	61	3		784	845		784
+P23	6	68	10		914	982		914
+P24	14	55	4		664	719		664
+P25	2	7	5		24	31		24
+P26	1	37	2		366	403		366
+P27	10	9	8		49	58		49
+P28	4	3	7		2	5		2
+P29	18	68	5		970	1038		970
+P30	1	30	1		269	299		269
+P31	11	14	10		107	121		107
+P32	12	1	8		1	2		1
+P33	14	68	7		1042	1110		1042
+P34	13	8	1		20	28		20
+P35	7	15	6		125	140		125
+P36	15	3	2		3	6		3
+P37	2	4	2		0	4		0
+P38	7	30	7		293	323		293
+P39	1	44	4		483	527		483
+P40	1	11	9		66	77		0
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      296.18
+Average Turnaround Time:   324.25
+Average Response Time:     294.43
+CPU Utilization:           99.91%
+Throughput:                0.0356 processes/unit
+Total Execution Time:      1124 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:43:16 2025
+Number of Processes: 40
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	3	52	3		754	806		0
+P2	5	52	5		788	840		18
+P3	2	24	5		470	494		3
+P4	11	14	3		319	333		28
+P5	16	61	7		970	1031		50
+P6	5	22	4		538	560		20
+P7	6	37	3		841	878		25
+P8	19	23	3		706	729		55
+P9	18	46	4		1007	1053		58
+P10	3	9	7		238	247		4
+P11	16	38	7		1001	1039		52
+P12	10	27	9		606	633		31
+P13	17	14	1		399	413		53
+P14	10	12	8		336	348		33
+P15	17	5	2		189	194		55
+P16	4	65	10		1037	1102		23
+P17	12	42	4		905	947		43
+P18	3	27	9		479	506		6
+P19	10	3	4		150	153		35
+P20	11	9	8		341	350		36
+P21	3	5	7		95	100		8
+P22	10	61	3		876	937		39
+P23	6	68	10		1038	1106		27
+P24	14	55	4		915	970		46
+P25	2	7	5		250	257		11
+P26	1	37	2		749	786		0
+P27	10	9	8		353	362		41
+P28	4	3	7		127	130		25
+P29	18	68	5		1038	1106		60
+P30	1	30	1		494	524		14
+P31	11	14	10		355	369		42
+P32	12	1	8		45	46		45
+P33	14	68	7		1036	1104		48
+P34	13	8	1		369	377		45
+P35	7	15	6		592	607		28
+P36	15	3	2		178	181		49
+P37	2	4	2		107	111		15
+P38	7	30	7		593	623		30
+P39	1	44	4		778	822		18
+P40	1	11	9		268	279		20
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      558.25
+Average Turnaround Time:   586.33
+Average Response Time:     30.98
+CPU Utilization:           99.91%
+Throughput:                0.0356 processes/unit
+Total Execution Time:      1124 time units
+
+
+
+>>> TEST: XLarge Set - CPU-Bound
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:43:20 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P30	0	78	7		0	78		0
+P8	1	55	4		77	132		77
+P12	1	25	6		132	157		132
+P26	1	59	8		157	216		157
+P10	2	40	6		215	255		215
+P11	3	46	8		254	300		254
+P33	3	96	1		300	396		300
+P60	3	63	10		396	459		396
+P1	4	89	8		458	547		458
+P3	4	44	8		547	591		547
+P4	4	47	6		591	638		591
+P41	4	72	6		638	710		638
+P56	4	66	8		710	776		710
+P58	4	59	4		776	835		776
+P9	5	71	8		834	905		834
+P31	5	71	3		905	976		905
+P44	5	53	8		976	1029		976
+P5	6	23	5		1028	1051		1028
+P13	6	36	5		1051	1087		1051
+P6	7	63	10		1086	1149		1086
+P16	7	47	8		1149	1196		1149
+P29	7	27	3		1196	1223		1196
+P55	7	48	2		1223	1271		1223
+P19	8	37	3		1270	1307		1270
+P25	8	73	6		1307	1380		1307
+P36	8	68	9		1380	1448		1380
+P43	8	50	3		1448	1498		1448
+P53	8	65	7		1498	1563		1498
+P21	9	77	6		1562	1639		1562
+P27	9	33	5		1639	1672		1639
+P39	9	37	8		1672	1709		1672
+P42	9	57	8		1709	1766		1709
+P49	9	62	9		1766	1828		1766
+P40	10	40	10		1827	1867		1827
+P47	10	47	2		1867	1914		1867
+P28	11	21	6		1913	1934		1913
+P59	11	66	7		1934	2000		1934
+P14	12	50	8		1999	2049		1999
+P17	12	25	8		2049	2074		2049
+P24	12	94	5		2074	2168		2074
+P37	12	52	1		2168	2220		2168
+P51	12	46	7		2220	2266		2220
+P54	12	94	2		2266	2360		2266
+P15	13	63	2		2359	2422		2359
+P35	13	58	5		2422	2480		2422
+P7	14	92	1		2479	2571		2479
+P22	14	74	5		2571	2645		2571
+P32	14	67	1		2645	2712		2645
+P50	14	85	5		2712	2797		2712
+P57	14	84	7		2797	2881		2797
+P18	15	67	7		2880	2947		2880
+P20	15	23	4		2947	2970		2947
+P38	15	59	5		2970	3029		2970
+P23	16	27	7		3028	3055		3028
+P46	16	58	6		3055	3113		3055
+P52	17	99	9		3112	3211		3112
+P2	19	28	10		3209	3237		3209
+P34	19	30	8		3237	3267		3237
+P45	19	79	7		3267	3346		3267
+P48	19	62	3		3346	3408		3346
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      1655.05
+Average Turnaround Time:   1712.17
+Average Response Time:     1655.05
+CPU Utilization:           100.00%
+Throughput:                0.0175 processes/unit
+Total Execution Time:      3427 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:43:20 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	4	89	8		2859	2948		2859
+P2	19	28	10		230	258		230
+P3	4	44	8		526	570		526
+P4	4	47	6		662	709		662
+P5	6	23	5		93	116		93
+P6	7	63	10		1582	1645		1582
+P7	14	92	1		2938	3030		2938
+P8	1	55	4		1059	1114		1059
+P9	5	71	8		2172	2243		2172
+P10	2	40	6		448	488		448
+P11	3	46	8		571	617		571
+P12	1	25	6		144	169		144
+P13	6	36	5		334	370		334
+P14	12	50	8		843	893		843
+P15	13	63	2		1639	1702		1639
+P16	7	47	8		706	753		706
+P17	12	25	8		158	183		158
+P18	15	67	7		1960	2027		1960
+P19	8	37	3		368	405		368
+P20	15	23	4		107	130		107
+P21	9	77	6		2529	2606		2529
+P22	14	74	5		2450	2524		2450
+P23	16	27	7		179	206		179
+P24	12	94	5		3032	3126		3032
+P25	8	73	6		2383	2456		2383
+P26	1	59	8		1287	1346		1287
+P27	9	33	5		298	331		298
+P28	11	21	6		67	88		67
+P29	7	27	3		215	242		215
+P30	0	78	7		0	78		0
+P31	5	71	3		2243	2314		2243
+P32	14	67	1		2028	2095		2028
+P33	3	96	1		3229	3325		3229
+P34	19	30	8		258	288		258
+P35	13	58	5		1159	1217		1159
+P36	8	68	9		2101	2169		2101
+P37	12	52	1		943	995		943
+P38	15	59	5		1332	1391		1332
+P39	9	37	8		404	441		404
+P40	10	40	10		480	520		480
+P41	4	72	6		2315	2387		2315
+P42	9	57	8		1106	1163		1106
+P43	8	50	3		897	947		897
+P44	5	53	8		1002	1055		1002
+P45	19	79	7		2596	2675		2596
+P46	16	58	6		1214	1272		1214
+P47	10	47	2		750	797		750
+P48	19	62	3		1446	1508		1446
+P49	9	62	9		1518	1580		1518
+P50	14	85	5		2764	2849		2764
+P51	12	46	7		608	654		608
+P52	17	99	9		3311	3410		3311
+P53	8	65	7		1770	1835		1770
+P54	12	94	2		3126	3220		3126
+P55	7	48	2		800	848		800
+P56	4	66	8		1839	1905		1839
+P57	14	84	7		2680	2764		2680
+P58	4	59	4		1402	1461		1402
+P59	11	66	7		1898	1964		1898
+P60	3	63	10		1712	1775		1712
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      1346.17
+Average Turnaround Time:   1403.28
+Average Response Time:     1346.17
+CPU Utilization:           100.00%
+Throughput:                0.0175 processes/unit
+Total Execution Time:      3427 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:43:20 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	4	89	8		2326	2415		2326
+P2	19	28	10		3214	3242		3214
+P3	4	44	8		2415	2459		2415
+P4	4	47	6		1479	1526		1479
+P5	6	23	5		1015	1038		1015
+P6	7	63	10		3254	3317		3254
+P7	14	92	1		64	156		64
+P8	1	55	4		883	938		883
+P9	5	71	8		2458	2529		2458
+P10	2	40	6		1528	1568		1528
+P11	3	46	8		2531	2577		2531
+P12	1	25	6		1569	1594		1569
+P13	6	36	5		1038	1074		1038
+P14	12	50	8		2568	2618		2568
+P15	13	63	2		372	435		372
+P16	7	47	8		2623	2670		2623
+P17	12	25	8		2665	2690		2665
+P18	15	67	7		1881	1948		1881
+P19	8	37	3		629	666		629
+P20	15	23	4		924	947		924
+P21	9	77	6		1586	1663		1586
+P22	14	74	5		1066	1140		1066
+P23	16	27	7		1947	1974		1947
+P24	12	94	5		1142	1236		1142
+P25	8	73	6		1664	1737		1664
+P26	1	59	8		2701	2760		2701
+P27	9	33	5		1239	1272		1239
+P28	11	21	6		1734	1755		1734
+P29	7	27	3		667	694		667
+P30	0	78	7		0	78		0
+P31	5	71	3		696	767		696
+P32	14	67	1		156	223		156
+P33	3	96	1		234	330		234
+P34	19	30	8		2742	2772		2742
+P35	13	58	5		1268	1326		1268
+P36	8	68	9		2996	3064		2996
+P37	12	52	1		321	373		321
+P38	15	59	5		1324	1383		1324
+P39	9	37	8		2782	2819		2782
+P40	10	40	10		3314	3354		3314
+P41	4	72	6		1762	1834		1762
+P42	9	57	8		2819	2876		2819
+P43	8	50	3		764	814		764
+P44	5	53	8		2880	2933		2880
+P45	19	79	7		1971	2050		1971
+P46	16	58	6		1822	1880		1822
+P47	10	47	2		438	485		438
+P48	19	62	3		803	865		803
+P49	9	62	9		3063	3125		3063
+P50	14	85	5		1384	1469		1384
+P51	12	46	7		2057	2103		2057
+P52	17	99	9		3117	3216		3117
+P53	8	65	7		2107	2172		2107
+P54	12	94	2		483	577		483
+P55	7	48	2		582	630		582
+P56	4	66	8		2934	3000		2934
+P57	14	84	7		2166	2250		2166
+P58	4	59	4		958	1017		958
+P59	11	66	7		2253	2319		2253
+P60	3	63	10		3361	3424		3361
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      1712.32
+Average Turnaround Time:   1769.43
+Average Response Time:     1712.32
+CPU Utilization:           100.00%
+Throughput:                0.0175 processes/unit
+Total Execution Time:      3427 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:43:20 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	4	89	8		3282	3371		0
+P2	19	28	10		1608	1636		217
+P3	4	44	8		2164	2208		4
+P4	4	47	6		2380	2427		8
+P5	6	23	5		1234	1257		54
+P6	7	63	10		2967	3030		57
+P7	14	92	1		3302	3394		170
+P8	1	55	4		2704	2759		15
+P9	5	71	8		3134	3205		63
+P10	2	40	6		2044	2084		18
+P11	3	46	8		2400	2446		21
+P12	1	25	6		1438	1463		27
+P13	6	36	5		1887	1923		66
+P14	12	50	8		2615	2665		108
+P15	13	63	2		3010	3073		175
+P16	7	47	8		2434	2481		69
+P17	12	25	8		1515	1540		112
+P18	15	67	7		3090	3157		177
+P19	8	37	3		2086	2123		72
+P20	15	23	4		1357	1380		181
+P21	9	77	6		3225	3302		119
+P22	14	74	5		3198	3272		186
+P23	16	27	7		1580	1607		188
+P24	12	94	5		3312	3406		120
+P25	8	73	6		3183	3256		76
+P26	1	59	8		2836	2895		31
+P27	9	33	5		1940	1973		127
+P28	11	21	6		1308	1329		129
+P29	7	27	3		1485	1512		81
+P30	0	78	7		3185	3263		0
+P31	5	71	3		3141	3212		87
+P32	14	67	1		3098	3165		194
+P33	3	96	1		3317	3413		33
+P34	19	30	8		1816	1846		221
+P35	13	58	5		2919	2977		199
+P36	8	68	9		3070	3138		88
+P37	12	52	1		2625	2677		132
+P38	15	59	5		2919	2978		201
+P39	9	37	8		2134	2171		139
+P40	10	40	10		2134	2174		142
+P41	4	72	6		3127	3199		36
+P42	9	57	8		2890	2947		147
+P43	8	50	3		2605	2655		92
+P44	5	53	8		2751	2804		99
+P45	19	79	7		3236	3315		225
+P46	16	58	6		2921	2979		204
+P47	10	47	2		2486	2533		150
+P48	19	62	3		3031	3093		229
+P49	9	62	9		3000	3062		155
+P50	14	85	5		3289	3374		210
+P51	12	46	7		2491	2537		156
+P52	17	99	9		3311	3410		235
+P53	8	65	7		3074	3139		100
+P54	12	94	2		3314	3408		160
+P55	7	48	2		2461	2509		105
+P56	4	66	8		3056	3122		40
+P57	14	84	7		3268	3352		214
+P58	4	59	4		2848	2907		44
+P59	11	66	7		3088	3154		165
+P60	3	63	10		2964	3027		49
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      2638.12
+Average Turnaround Time:   2695.23
+Average Response Time:     115.37
+CPU Utilization:           100.00%
+Throughput:                0.0175 processes/unit
+Total Execution Time:      3427 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:43:20 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	4	89	8		2859	2948		2859
+P2	19	28	10		153	181		153
+P3	4	44	8		449	493		449
+P4	4	47	6		585	632		585
+P5	6	23	5		41	64		41
+P6	7	63	10		1505	1568		1505
+P7	14	92	1		2938	3030		2938
+P8	1	55	4		982	1037		982
+P9	5	71	8		2095	2166		2095
+P10	2	40	6		371	411		371
+P11	3	46	8		494	540		494
+P12	1	25	6		0	25		0
+P13	6	36	5		257	293		257
+P14	12	50	8		766	816		766
+P15	13	63	2		1562	1625		1562
+P16	7	47	8		629	676		629
+P17	12	25	8		81	106		81
+P18	15	67	7		1883	1950		1883
+P19	8	37	3		291	328		291
+P20	15	23	4		55	78		55
+P21	9	77	6		2452	2529		2452
+P22	14	74	5		2373	2447		2373
+P23	16	27	7		102	129		102
+P24	12	94	5		3032	3126		3032
+P25	8	73	6		2306	2379		2306
+P26	1	59	8		1210	1269		1210
+P27	9	33	5		221	254		221
+P28	11	21	6		15	36		15
+P29	7	27	3		138	165		138
+P30	0	78	7		2537	2615		0
+P31	5	71	3		2166	2237		2166
+P32	14	67	1		1951	2018		1951
+P33	3	96	1		3229	3325		3229
+P34	19	30	8		181	211		181
+P35	13	58	5		1082	1140		1082
+P36	8	68	9		2024	2092		2024
+P37	12	52	1		866	918		866
+P38	15	59	5		1255	1314		1255
+P39	9	37	8		327	364		327
+P40	10	40	10		403	443		403
+P41	4	72	6		2238	2310		2238
+P42	9	57	8		1029	1086		1029
+P43	8	50	3		820	870		820
+P44	5	53	8		925	978		925
+P45	19	79	7		2596	2675		2596
+P46	16	58	6		1137	1195		1137
+P47	10	47	2		673	720		673
+P48	19	62	3		1369	1431		1369
+P49	9	62	9		1441	1503		1441
+P50	14	85	5		2764	2849		2764
+P51	12	46	7		531	577		531
+P52	17	99	9		3311	3410		3311
+P53	8	65	7		1693	1758		1693
+P54	12	94	2		3126	3220		3126
+P55	7	48	2		723	771		723
+P56	4	66	8		1762	1828		1762
+P57	14	84	7		2680	2764		2680
+P58	4	59	4		1325	1384		1325
+P59	11	66	7		1821	1887		1821
+P60	3	63	10		1635	1698		1635
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      1324.42
+Average Turnaround Time:   1381.53
+Average Response Time:     1282.13
+CPU Utilization:           100.00%
+Throughput:                0.0175 processes/unit
+Total Execution Time:      3427 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:43:20 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	4	89	8		3011	3100		6
+P2	19	28	10		1664	1692		93
+P3	4	44	8		1853	1897		8
+P4	4	47	6		1867	1914		10
+P5	6	23	5		1039	1062		22
+P6	7	63	10		3100	3163		31
+P7	14	92	1		3197	3289		72
+P8	1	55	4		1760	1815		1
+P9	5	71	8		3084	3155		25
+P10	2	40	6		1784	1824		2
+P11	3	46	8		1885	1931		13
+P12	1	25	6		873	898		5
+P13	6	36	5		2087	2123		26
+P14	12	50	8		2460	2510		58
+P15	13	63	2		3228	3291		75
+P16	7	47	8		2179	2226		33
+P17	12	25	8		1375	1400		60
+P18	15	67	7		3289	3356		85
+P19	8	37	3		2195	2232		34
+P20	15	23	4		1598	1621		87
+P21	9	77	6		3119	3196		47
+P22	14	74	5		3228	3302		76
+P23	16	27	7		1606	1633		88
+P24	12	94	5		3131	3225		62
+P25	8	73	6		3100	3173		36
+P26	1	59	8		1795	1854		7
+P27	9	33	5		2367	2400		49
+P28	11	21	6		1403	1424		65
+P29	7	27	3		1175	1202		39
+P30	0	78	7		2999	3077		0
+P31	5	71	3		3093	3164		29
+P32	14	67	1		3240	3307		78
+P33	3	96	1		3323	3419		15
+P34	19	30	8		1678	1708		95
+P35	13	58	5		2741	2799		81
+P36	8	68	9		3111	3179		40
+P37	12	52	1		2512	2564		66
+P38	15	59	5		2863	2922		91
+P39	9	37	8		2370	2407		51
+P40	10	40	10		2376	2416		52
+P41	4	72	6		3070	3142		16
+P42	9	57	8		2387	2444		55
+P43	8	50	3		2266	2316		42
+P44	5	53	8		2126	2179		31
+P45	19	79	7		3322	3401		97
+P46	16	58	6		2891	2949		92
+P47	10	47	2		2413	2460		56
+P48	19	62	3		2980	3042		99
+P49	9	62	9		2431	2493		59
+P50	14	85	5		3245	3330		82
+P51	12	46	7		2534	2580		68
+P52	17	99	9		3311	3410		93
+P53	8	65	7		3117	3182		44
+P54	12	94	2		3163	3257		70
+P55	7	48	2		2319	2367		47
+P56	4	66	8		3080	3146		18
+P57	14	84	7		3268	3352		84
+P58	4	59	4		1996	2055		20
+P59	11	66	7		3196	3262		73
+P60	3	63	10		3085	3148		23
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      2515.97
+Average Turnaround Time:   2573.08
+Average Response Time:     49.70
+CPU Utilization:           100.00%
+Throughput:                0.0175 processes/unit
+Total Execution Time:      3427 time units
+
+
+
+>>> TEST: XLarge Set - I/O-Bound
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:43:24 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P3	0	6	9		0	6		0
+P28	0	8	9		6	14		6
+P45	0	7	1		14	21		14
+P17	1	10	1		20	30		20
+P25	1	5	5		30	35		30
+P34	1	1	2		35	36		35
+P48	2	1	4		35	36		35
+P11	3	10	9		35	45		35
+P26	3	4	5		45	49		45
+P9	4	10	4		48	58		48
+P15	4	7	1		58	65		58
+P24	4	3	2		65	68		65
+P41	4	4	2		68	72		68
+P6	5	8	6		71	79		71
+P49	5	9	2		79	88		79
+P55	5	2	4		88	90		88
+P46	6	5	7		89	94		89
+P51	6	1	7		94	95		94
+P52	6	9	10		95	104		95
+P7	7	4	6		103	107		103
+P16	7	9	4		107	116		107
+P29	7	4	2		116	120		116
+P59	7	3	10		120	123		120
+P13	8	2	3		122	124		122
+P27	8	9	4		124	133		124
+P32	8	2	4		133	135		133
+P39	8	9	9		135	144		135
+P54	8	10	2		144	154		144
+P12	9	5	4		153	158		153
+P14	9	2	8		158	160		158
+P31	10	7	9		159	166		159
+P35	10	1	3		166	167		166
+P57	10	7	4		167	174		167
+P20	11	6	6		173	179		173
+P1	12	9	9		178	187		178
+P43	12	4	10		187	191		187
+P60	12	5	4		191	196		191
+P5	13	5	3		195	200		195
+P10	13	1	5		200	201		200
+P18	13	3	6		201	204		201
+P19	13	1	5		204	205		204
+P33	13	7	6		205	212		205
+P47	13	1	8		212	213		212
+P37	14	5	9		212	217		212
+P42	14	1	9		217	218		217
+P30	15	5	1		217	222		217
+P8	16	8	4		221	229		221
+P21	16	8	1		229	237		229
+P22	16	8	3		237	245		237
+P50	16	9	2		245	254		245
+P2	17	5	8		253	258		253
+P23	17	10	1		258	268		258
+P53	17	2	6		268	270		268
+P38	18	6	4		269	275		269
+P4	19	1	2		274	275		274
+P36	19	6	7		275	281		275
+P40	19	2	8		281	283		281
+P44	19	1	7		283	284		283
+P56	19	10	4		284	294		284
+P58	19	2	9		294	296		294
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      152.42
+Average Turnaround Time:   157.67
+Average Response Time:     152.42
+CPU Utilization:           100.00%
+Throughput:                0.1905 processes/unit
+Total Execution Time:      315 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:43:24 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	9	9		180	189		180
+P2	17	5	8		42	47		42
+P3	0	6	9		0	6		0
+P4	19	1	2		1	2		1
+P5	13	5	3		51	56		51
+P6	5	8	6		147	155		147
+P7	7	4	6		32	36		32
+P8	16	8	4		144	152		144
+P9	4	10	4		251	261		251
+P10	13	1	5		1	2		1
+P11	3	10	9		262	272		262
+P12	9	5	4		60	65		60
+P13	8	2	3		1	3		1
+P14	9	2	8		3	5		3
+P15	4	7	1		113	120		113
+P16	7	9	4		194	203		194
+P17	1	10	1		274	284		274
+P18	13	3	6		17	20		17
+P19	13	1	5		2	3		2
+P20	11	6	6		88	94		88
+P21	16	8	1		152	160		152
+P22	16	8	3		160	168		160
+P23	17	10	1		268	278		268
+P24	4	3	2		29	32		29
+P25	1	5	5		73	78		73
+P26	3	4	5		40	44		40
+P27	8	9	4		202	211		202
+P28	0	8	9		184	192		184
+P29	7	4	2		40	44		40
+P30	15	5	1		64	69		64
+P31	10	7	9		114	121		114
+P32	8	2	4		10	12		10
+P33	13	7	6		118	125		118
+P34	1	1	2		5	6		5
+P35	10	1	3		1	2		1
+P36	19	6	7		86	92		86
+P37	14	5	9		70	75		70
+P38	18	6	4		93	99		93
+P39	8	9	9		211	220		211
+P40	19	2	8		3	5		3
+P41	4	4	2		47	51		47
+P42	14	1	9		2	3		2
+P43	12	4	10		43	47		43
+P44	19	1	7		2	3		2
+P45	0	7	1		138	145		138
+P46	6	5	7		83	88		83
+P47	13	1	8		4	5		4
+P48	2	1	4		5	6		5
+P49	5	9	2		223	232		223
+P50	16	9	2		221	230		221
+P51	6	1	7		2	3		2
+P52	6	9	10		240	249		240
+P53	17	2	6		7	9		7
+P54	8	10	2		287	297		287
+P55	5	2	4		21	23		21
+P56	19	10	4		286	296		286
+P57	10	7	4		135	142		135
+P58	19	2	9		9	11		9
+P59	7	3	10		29	32		29
+P60	12	5	4		82	87		82
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      94.20
+Average Turnaround Time:   99.45
+Average Response Time:     94.20
+CPU Utilization:           100.00%
+Throughput:                0.1905 processes/unit
+Total Execution Time:      315 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:43:24 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	9	9		230	239		230
+P2	17	5	8		215	220		215
+P3	0	6	9		251	257		251
+P4	19	1	2		28	29		28
+P5	13	5	3		75	80		75
+P6	5	8	6		184	192		184
+P7	7	4	6		190	194		190
+P8	16	8	4		88	96		88
+P9	4	10	4		108	118		108
+P10	13	1	5		165	166		165
+P11	3	10	9		254	264		254
+P12	9	5	4		113	118		113
+P13	8	2	3		85	87		85
+P14	9	2	8		228	230		228
+P15	4	7	1		3	10		3
+P16	7	9	4		120	129		120
+P17	1	10	1		13	23		13
+P18	13	3	6		188	191		188
+P19	13	1	5		166	167		166
+P20	11	6	6		193	199		193
+P21	16	8	1		8	16		8
+P22	16	8	3		79	87		79
+P23	17	10	1		15	25		15
+P24	4	3	2		44	47		44
+P25	1	5	5		179	184		179
+P26	3	4	5		182	186		182
+P27	8	9	4		128	137		128
+P28	0	8	9		267	275		267
+P29	7	4	2		44	48		44
+P30	15	5	1		27	32		27
+P31	10	7	9		265	272		265
+P32	8	2	4		137	139		137
+P33	13	7	6		197	204		197
+P34	1	1	2		54	55		54
+P35	10	1	3		93	94		93
+P36	19	6	7		200	206		200
+P37	14	5	9		268	273		268
+P38	18	6	4		129	135		129
+P39	8	9	9		279	288		279
+P40	19	2	8		220	222		220
+P41	4	4	2		52	56		52
+P42	14	1	9		282	283		282
+P43	12	4	10		287	291		287
+P44	19	1	7		206	207		206
+P45	0	7	1		0	7		0
+P46	6	5	7		220	225		220
+P47	13	1	8		228	229		228
+P48	2	1	4		151	152		151
+P49	5	9	2		55	64		55
+P50	16	9	2		53	62		53
+P51	6	1	7		225	226		225
+P52	6	9	10		297	306		297
+P53	17	2	6		200	202		200
+P54	8	10	2		70	80		70
+P55	5	2	4		149	151		149
+P56	19	10	4		137	147		137
+P57	10	7	4		156	163		156
+P58	19	2	9		278	280		278
+P59	7	3	10		305	308		305
+P60	12	5	4		161	166		161
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      153.73
+Average Turnaround Time:   158.98
+Average Response Time:     153.73
+CPU Utilization:           100.00%
+Throughput:                0.1905 processes/unit
+Total Execution Time:      315 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:43:24 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	9	9		289	298		89
+P2	17	5	8		266	271		161
+P3	0	6	9		41	47		0
+P4	19	1	2		163	164		163
+P5	13	5	3		248	253		123
+P6	5	8	6		209	217		42
+P7	7	4	6		44	48		44
+P8	16	8	4		246	254		124
+P9	4	10	4		235	245		0
+P10	13	1	5		131	132		131
+P11	3	10	9		252	262		5
+P12	9	5	4		240	245		96
+P13	8	2	3		47	49		47
+P14	9	2	8		100	102		100
+P15	4	7	1		167	174		8
+P16	7	9	4		287	296		50
+P17	1	10	1		291	301		15
+P18	13	3	6		132	135		132
+P19	13	1	5		135	136		135
+P20	11	6	6		239	245		100
+P21	16	8	1		250	258		133
+P22	16	8	3		254	262		137
+P23	17	10	1		286	296		166
+P24	4	3	2		16	19		16
+P25	1	5	5		205	210		22
+P26	3	4	5		24	28		24
+P27	8	9	4		287	296		53
+P28	0	8	9		207	215		31
+P29	7	4	2		58	62		58
+P30	15	5	1		259	264		142
+P31	10	7	9		242	249		105
+P32	8	2	4		61	63		61
+P33	13	7	6		262	269		148
+P34	1	1	2		34	35		34
+P35	10	1	3		109	110		109
+P36	19	6	7		269	275		168
+P37	14	5	9		264	269		151
+P38	18	6	4		272	278		173
+P39	8	9	9		288	297		63
+P40	19	2	8		176	178		176
+P41	4	4	2		32	36		32
+P42	14	1	9		155	156		155
+P43	12	4	10		108	112		108
+P44	19	1	7		178	179		178
+P45	0	7	1		211	218		40
+P46	6	5	7		224	229		69
+P47	13	1	8		157	158		157
+P48	2	1	4		42	43		42
+P49	5	9	2		292	301		74
+P50	16	9	2		286	295		155
+P51	6	1	7		77	78		77
+P52	6	9	10		292	301		78
+P53	17	2	6		181	183		181
+P54	8	10	2		291	301		80
+P55	5	2	4		87	89		87
+P56	19	10	4		286	296		181
+P57	10	7	4		245	252		114
+P58	19	2	9		185	187		185
+P59	7	3	10		87	90		87
+P60	12	5	4		246	251		116
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      187.45
+Average Turnaround Time:   192.70
+Average Response Time:     95.52
+CPU Utilization:           100.00%
+Throughput:                0.1905 processes/unit
+Total Execution Time:      315 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:43:24 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	9	9		180	189		180
+P2	17	5	8		37	42		37
+P3	0	6	9		58	64		0
+P4	19	1	2		0	1		0
+P5	13	5	3		51	56		51
+P6	5	8	6		147	155		147
+P7	7	4	6		31	35		31
+P8	16	8	4		144	152		144
+P9	4	10	4		251	261		251
+P10	13	1	5		0	1		0
+P11	3	10	9		262	272		262
+P12	9	5	4		60	65		60
+P13	8	2	3		0	2		0
+P14	9	2	8		2	4		2
+P15	4	7	1		113	120		113
+P16	7	9	4		194	203		194
+P17	1	10	1		274	284		274
+P18	13	3	6		16	19		16
+P19	13	1	5		1	2		1
+P20	11	6	6		88	94		88
+P21	16	8	1		152	160		152
+P22	16	8	3		160	168		160
+P23	17	10	1		268	278		268
+P24	4	3	2		0	3		0
+P25	1	5	5		73	78		73
+P26	3	4	5		28	32		0
+P27	8	9	4		202	211		202
+P28	0	8	9		184	192		184
+P29	7	4	2		35	39		35
+P30	15	5	1		64	69		64
+P31	10	7	9		114	121		114
+P32	8	2	4		9	11		9
+P33	13	7	6		118	125		118
+P34	1	1	2		0	1		0
+P35	10	1	3		0	1		0
+P36	19	6	7		86	92		86
+P37	14	5	9		70	75		70
+P38	18	6	4		93	99		93
+P39	8	9	9		211	220		211
+P40	19	2	8		2	4		2
+P41	4	4	2		42	46		42
+P42	14	1	9		1	2		1
+P43	12	4	10		38	42		38
+P44	19	1	7		1	2		1
+P45	0	7	1		138	145		138
+P46	6	5	7		83	88		83
+P47	13	1	8		3	4		3
+P48	2	1	4		0	1		0
+P49	5	9	2		223	232		223
+P50	16	9	2		221	230		221
+P51	6	1	7		1	2		1
+P52	6	9	10		240	249		240
+P53	17	2	6		6	8		6
+P54	8	10	2		287	297		287
+P55	5	2	4		20	22		20
+P56	19	10	4		286	296		286
+P57	10	7	4		135	142		135
+P58	19	2	9		8	10		8
+P59	7	3	10		28	31		28
+P60	12	5	4		82	87		82
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      93.68
+Average Turnaround Time:   98.93
+Average Response Time:     92.25
+CPU Utilization:           100.00%
+Throughput:                0.1905 processes/unit
+Total Execution Time:      315 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:43:24 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	12	9	9		276	285		52
+P2	17	5	8		217	222		75
+P3	0	6	9		108	114		0
+P4	19	1	2		81	82		81
+P5	13	5	3		191	196		57
+P6	5	8	6		260	268		19
+P7	7	4	6		152	156		28
+P8	16	8	4		276	284		66
+P9	4	10	4		252	262		8
+P10	13	1	5		59	60		59
+P11	3	10	9		257	267		11
+P12	9	5	4		171	176		44
+P13	8	2	3		29	31		29
+P14	9	2	8		46	48		46
+P15	4	7	1		260	267		12
+P16	7	9	4		266	275		32
+P17	1	10	1		248	258		1
+P18	13	3	6		194	197		60
+P19	13	1	5		62	63		62
+P20	11	6	6		172	178		46
+P21	16	8	1		278	286		68
+P22	16	8	3		280	288		70
+P23	17	10	1		284	294		77
+P24	4	3	2		135	138		14
+P25	1	5	5		115	120		3
+P26	3	4	5		137	141		17
+P27	8	9	4		268	277		33
+P28	0	8	9		253	261		6
+P29	7	4	2		162	166		36
+P30	15	5	1		212	217		73
+P31	10	7	9		276	283		49
+P32	8	2	4		37	39		37
+P33	13	7	6		278	285		63
+P34	1	1	2		7	8		7
+P35	10	1	3		51	52		51
+P36	19	6	7		226	232		82
+P37	14	5	9		198	203		64
+P38	18	6	4		223	229		78
+P39	8	9	9		271	280		39
+P40	19	2	8		84	86		84
+P41	4	4	2		138	142		18
+P42	14	1	9		66	67		66
+P43	12	4	10		187	191		54
+P44	19	1	7		86	87		86
+P45	0	7	1		255	262		9
+P46	6	5	7		142	147		20
+P47	13	1	8		68	69		68
+P48	2	1	4		9	10		9
+P49	5	9	2		262	271		23
+P50	16	9	2		282	291		74
+P51	6	1	7		24	25		24
+P52	6	9	10		264	273		25
+P53	17	2	6		81	83		81
+P54	8	10	2		274	284		41
+P55	5	2	4		28	30		28
+P56	19	10	4		286	296		87
+P57	10	7	4		277	284		52
+P58	19	2	9		89	91		89
+P59	7	3	10		172	175		44
+P60	12	5	4		189	194		56
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      175.52
+Average Turnaround Time:   180.77
+Average Response Time:     44.88
+CPU Utilization:           100.00%
+Throughput:                0.1905 processes/unit
+Total Execution Time:      315 time units
+
+
+
+>>> TEST: XLarge Set - Mixed
+
+========================================
+Algorithm: FCFS
+Timestamp: Thu Oct 23 21:43:28 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	0	29	6		0	29		0
+P2	0	36	7		29	65		29
+P4	0	20	4		65	85		65
+P8	0	1	3		85	86		85
+P48	0	37	4		86	123		86
+P18	1	20	2		122	142		122
+P24	1	48	7		142	190		142
+P34	1	61	4		190	251		190
+P55	1	44	4		251	295		251
+P59	1	53	10		295	348		295
+P45	2	35	8		347	382		347
+P60	2	3	8		382	385		382
+P6	3	10	1		384	394		384
+P7	3	5	5		394	399		394
+P10	3	40	10		399	439		399
+P27	3	8	5		439	447		439
+P36	3	38	5		447	485		447
+P5	4	9	2		484	493		484
+P31	4	8	3		493	501		493
+P41	4	63	5		501	564		501
+P21	5	63	9		563	626		563
+P42	5	1	3		626	627		626
+P51	5	3	5		627	630		627
+P15	6	54	8		629	683		629
+P33	6	60	3		683	743		683
+P43	6	8	8		743	751		743
+P49	6	2	4		751	753		751
+P20	7	57	4		752	809		752
+P50	7	11	1		809	820		809
+P54	7	14	5		820	834		820
+P37	8	7	9		833	840		833
+P47	8	1	3		840	841		840
+P9	9	14	9		840	854		840
+P12	9	12	7		854	866		854
+P30	9	3	9		866	869		866
+P13	10	4	2		868	872		868
+P23	10	45	2		872	917		872
+P25	10	14	4		917	931		917
+P26	10	11	6		931	942		931
+P32	10	4	7		942	946		942
+P35	10	63	7		946	1009		946
+P29	11	5	3		1008	1013		1008
+P38	11	3	5		1013	1016		1013
+P53	11	7	5		1016	1023		1016
+P11	12	11	10		1022	1033		1022
+P17	13	48	5		1032	1080		1032
+P40	13	51	2		1080	1131		1080
+P46	13	15	10		1131	1146		1131
+P19	14	30	3		1145	1175		1145
+P22	14	40	1		1175	1215		1175
+P52	14	69	10		1215	1284		1215
+P58	14	43	4		1284	1327		1284
+P16	16	13	6		1325	1338		1325
+P28	16	26	2		1338	1364		1338
+P44	16	63	6		1364	1427		1364
+P57	16	11	1		1427	1438		1427
+P14	17	51	1		1437	1488		1437
+P56	18	28	10		1487	1515		1487
+P3	19	2	8		1514	1516		1514
+P39	19	11	8		1516	1527		1516
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      762.93
+Average Turnaround Time:   788.70
+Average Response Time:     762.93
+CPU Utilization:           100.00%
+Throughput:                0.0388 processes/unit
+Total Execution Time:      1546 time units
+
+
+
+========================================
+Algorithm: SJF
+Timestamp: Thu Oct 23 21:43:28 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	0	29	6		325	354		325
+P2	0	36	7		419	455		419
+P3	19	2	8		4	6		4
+P4	0	20	4		1	21		1
+P5	4	9	2		91	100		91
+P6	3	10	1		101	111		101
+P7	3	5	5		44	49		44
+P8	0	1	3		0	1		0
+P9	9	14	9		185	199		185
+P10	3	40	10		527	567		527
+P11	12	11	10		102	113		102
+P12	9	12	7		160	172		160
+P13	10	4	2		29	33		29
+P14	17	51	1		821	872		821
+P15	6	54	8		987	1041		987
+P16	16	13	6		165	178		165
+P17	13	48	5		729	777		729
+P18	1	20	2		250	270		250
+P19	14	30	3		340	370		340
+P20	7	57	4		1040	1097		1040
+P21	5	63	9		1220	1283		1220
+P22	14	40	1		556	596		556
+P23	10	45	2		687	732		687
+P24	1	48	7		789	837		789
+P25	10	14	4		198	212		198
+P26	10	11	6		115	126		115
+P27	3	8	5		68	76		68
+P28	16	26	2		255	281		255
+P29	11	5	3		41	46		41
+P30	9	3	9		18	21		18
+P31	4	8	3		75	83		75
+P32	10	4	7		33	37		33
+P33	6	60	3		1098	1158		1098
+P34	1	61	4		1163	1224		1163
+P35	10	63	7		1278	1341		1278
+P36	3	38	5		489	527		489
+P37	8	7	9		49	56		49
+P38	11	3	5		19	22		19
+P39	19	11	8		117	128		117
+P40	13	51	2		876	927		876
+P41	4	63	5		1347	1410		1347
+P42	5	1	3		16	17		16
+P43	6	8	8		81	89		81
+P44	16	63	6		1398	1461		1398
+P45	2	35	8		382	417		382
+P46	13	15	10		223	238		223
+P47	8	1	3		14	15		14
+P48	0	37	4		455	492		455
+P49	6	2	4		19	21		19
+P50	7	11	1		140	151		140
+P51	5	3	5		28	31		28
+P52	14	69	10		1463	1532		1463
+P53	11	7	5		53	60		53
+P54	7	14	5		215	229		215
+P55	1	44	4		652	696		652
+P56	18	28	10		279	307		279
+P57	16	11	1		142	153		142
+P58	14	43	4		596	639		596
+P59	1	53	10		939	992		939
+P60	2	3	8		34	37		34
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      399.00
+Average Turnaround Time:   424.77
+Average Response Time:     399.00
+CPU Utilization:           100.00%
+Throughput:                0.0388 processes/unit
+Total Execution Time:      1546 time units
+
+
+
+========================================
+Algorithm: Priority
+Timestamp: Thu Oct 23 21:43:28 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	0	29	6		851	880		851
+P2	0	36	7		967	1003		967
+P3	19	2	8		1111	1113		1111
+P4	0	20	4		384	404		384
+P5	4	9	2		140	149		140
+P6	3	10	1		18	28		18
+P7	3	5	5		659	664		659
+P8	0	1	3		0	1		0
+P9	9	14	9		1234	1248		1234
+P10	3	40	10		1327	1367		1327
+P11	12	11	10		1358	1369		1358
+P12	9	12	7		994	1006		994
+P13	10	4	2		143	147		143
+P14	17	51	1		14	65		14
+P15	6	54	8		1126	1180		1126
+P16	16	13	6		864	877		864
+P17	13	48	5		654	702		654
+P18	1	20	2		0	20		0
+P19	14	30	3		265	295		265
+P20	7	57	4		397	454		397
+P21	5	63	9		1252	1315		1252
+P22	14	40	1		68	108		68
+P23	10	45	2		147	192		147
+P24	1	48	7		1014	1062		1014
+P25	10	14	4		451	465		451
+P26	10	11	6		883	894		883
+P27	3	8	5		712	720		712
+P28	16	26	2		186	212		186
+P29	11	5	3		298	303		298
+P30	9	3	9		1311	1314		1311
+P31	4	8	3		310	318		310
+P32	10	4	7		1053	1057		1053
+P33	6	60	3		316	376		316
+P34	1	61	4		474	535		474
+P35	10	63	7		1057	1120		1057
+P36	3	38	5		720	758		720
+P37	8	7	9		1315	1322		1315
+P38	11	3	5		750	753		750
+P39	19	11	8		1167	1178		1167
+P40	13	51	2		215	266		215
+P41	4	63	5		760	823		760
+P42	5	1	3		377	378		377
+P43	6	8	8		1191	1199		1191
+P44	16	63	6		888	951		888
+P45	2	35	8		1203	1238		1203
+P46	13	15	10		1368	1383		1368
+P47	8	1	3		375	376		375
+P48	0	37	4		536	573		536
+P49	6	2	4		567	569		567
+P50	7	11	1		115	126		115
+P51	5	3	5		822	825		822
+P52	14	69	10		1382	1451		1382
+P53	11	7	5		819	826		819
+P54	7	14	5		830	844		830
+P55	1	44	4		574	618		574
+P56	18	28	10		1447	1475		1447
+P57	16	11	1		117	128		117
+P58	14	43	4		605	648		605
+P59	1	53	10		1492	1545		1492
+P60	2	3	8		1238	1241		1238
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      715.18
+Average Turnaround Time:   740.95
+Average Response Time:     715.18
+CPU Utilization:           100.00%
+Throughput:                0.0388 processes/unit
+Total Execution Time:      1546 time units
+
+
+
+========================================
+Algorithm: Round Robin (q=4)
+Timestamp: Thu Oct 23 21:43:28 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	0	29	6		935	964		0
+P2	0	36	7		1050	1086		4
+P3	19	2	8		206	208		206
+P4	0	20	4		643	663		8
+P5	4	9	2		399	408		8
+P6	3	10	1		413	423		13
+P7	3	5	5		236	241		17
+P8	0	1	3		24	25		24
+P9	9	14	9		626	640		114
+P10	3	40	10		1172	1212		22
+P11	12	11	10		481	492		115
+P12	9	12	7		487	499		122
+P13	10	4	2		125	129		125
+P14	17	51	1		1392	1443		210
+P15	6	54	8		1411	1465		74
+P16	16	13	6		635	648		161
+P17	13	48	5		1337	1385		168
+P18	1	20	2		694	714		28
+P19	14	30	3		1056	1086		171
+P20	7	57	4		1440	1497		77
+P21	5	63	9		1463	1526		83
+P22	14	40	1		1216	1256		175
+P23	10	45	2		1335	1380		129
+P24	1	48	7		1312	1360		32
+P25	10	14	4		631	645		133
+P26	10	11	6		498	509		137
+P27	3	8	5		249	257		34
+P28	16	26	2		964	990		177
+P29	11	5	3		340	345		140
+P30	9	3	9		146	149		146
+P31	4	8	3		252	260		37
+P32	10	4	7		148	152		148
+P33	6	60	3		1446	1506		86
+P34	1	61	4		1463	1524		44
+P35	10	63	7		1461	1524		152
+P36	3	38	5		1184	1222		46
+P37	8	7	9		300	307		88
+P38	11	3	5		155	158		155
+P39	19	11	8		547	558		212
+P40	13	51	2		1385	1436		184
+P41	4	63	5		1461	1524		49
+P42	5	1	3		95	96		95
+P43	6	8	8		305	313		95
+P44	16	63	6		1458	1521		185
+P45	2	35	8		1110	1145		55
+P46	13	15	10		663	678		192
+P47	8	1	3		97	98		97
+P48	0	37	4		1193	1230		61
+P49	6	2	4		100	102		100
+P50	7	11	1		471	482		101
+P51	5	3	5		107	110		107
+P52	14	69	10		1463	1532		195
+P53	11	7	5		345	352		158
+P54	7	14	5		622	636		108
+P55	1	44	4		1261	1305		64
+P56	18	28	10		984	1012		217
+P57	16	11	1		539	550		197
+P58	14	43	4		1296	1339		203
+P59	1	53	10		1415	1468		68
+P60	2	3	8		71	74		71
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      771.88
+Average Turnaround Time:   797.65
+Average Response Time:     107.05
+CPU Utilization:           100.00%
+Throughput:                0.0388 processes/unit
+Total Execution Time:      1546 time units
+
+
+
+========================================
+Algorithm: SRTF
+Timestamp: Thu Oct 23 21:43:28 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	0	29	6		325	354		325
+P2	0	36	7		419	455		419
+P3	19	2	8		0	2		0
+P4	0	20	4		231	251		1
+P5	4	9	2		72	81		72
+P6	3	10	1		82	92		82
+P7	3	5	5		25	30		25
+P8	0	1	3		0	1		0
+P9	9	14	9		166	180		166
+P10	3	40	10		527	567		527
+P11	12	11	10		83	94		83
+P12	9	12	7		141	153		141
+P13	10	4	2		10	14		8
+P14	17	51	1		821	872		821
+P15	6	54	8		987	1041		987
+P16	16	13	6		146	159		146
+P17	13	48	5		729	777		729
+P18	1	20	2		250	270		250
+P19	14	30	3		340	370		340
+P20	7	57	4		1040	1097		1040
+P21	5	63	9		1220	1283		1220
+P22	14	40	1		556	596		556
+P23	10	45	2		687	732		687
+P24	1	48	7		789	837		789
+P25	10	14	4		179	193		179
+P26	10	11	6		96	107		96
+P27	3	8	5		49	57		49
+P28	16	26	2		255	281		255
+P29	11	5	3		22	27		22
+P30	9	3	9		0	3		0
+P31	4	8	3		56	64		56
+P32	10	4	7		14	18		14
+P33	6	60	3		1098	1158		1098
+P34	1	61	4		1163	1224		1163
+P35	10	63	7		1278	1341		1278
+P36	3	38	5		489	527		489
+P37	8	7	9		30	37		30
+P38	11	3	5		1	4		1
+P39	19	11	8		98	109		98
+P40	13	51	2		876	927		876
+P41	4	63	5		1347	1410		1347
+P42	5	1	3		0	1		0
+P43	6	8	8		62	70		62
+P44	16	63	6		1398	1461		1398
+P45	2	35	8		382	417		382
+P46	13	15	10		204	219		204
+P47	8	1	3		0	1		0
+P48	0	37	4		455	492		455
+P49	6	2	4		0	2		0
+P50	7	11	1		121	132		121
+P51	5	3	5		10	13		10
+P52	14	69	10		1463	1532		1463
+P53	11	7	5		34	41		34
+P54	7	14	5		196	210		196
+P55	1	44	4		652	696		652
+P56	18	28	10		279	307		279
+P57	16	11	1		123	134		123
+P58	14	43	4		596	639		596
+P59	1	53	10		939	992		939
+P60	2	3	8		0	3		0
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      393.52
+Average Turnaround Time:   419.28
+Average Response Time:     389.65
+CPU Utilization:           100.00%
+Throughput:                0.0388 processes/unit
+Total Execution Time:      1546 time units
+
+
+
+========================================
+Algorithm: MLFQ
+Timestamp: Thu Oct 23 21:43:28 2025
+Number of Processes: 60
+========================================
+
+Process Details:
+PID	Arrival	Burst	Priority	Waiting	Turnaround	Response
+--------------------------------------------------------------------
+P1	0	29	6		622	651		0
+P2	0	36	7		1044	1080		2
+P3	19	2	8		92	94		92
+P4	0	20	4		653	673		4
+P5	4	9	2		389	398		19
+P6	3	10	1		393	403		22
+P7	3	5	5		161	166		24
+P8	0	1	3		6	7		6
+P9	9	14	9		466	480		49
+P10	3	40	10		1145	1185		26
+P11	12	11	10		508	519		73
+P12	9	12	7		474	486		51
+P13	10	4	2		219	223		57
+P14	17	51	1		1435	1486		84
+P15	6	54	8		1192	1246		33
+P16	16	13	6		573	586		87
+P17	13	48	5		1345	1393		74
+P18	1	20	2		658	678		6
+P19	14	30	3		924	954		79
+P20	7	57	4		1277	1334		45
+P21	5	63	9		1469	1532		36
+P22	14	40	1		1383	1423		81
+P23	10	45	2		1301	1346		59
+P24	1	48	7		1049	1097		8
+P25	10	14	4		488	502		61
+P26	10	11	6		496	507		63
+P27	3	8	5		405	413		28
+P28	16	26	2		1002	1028		89
+P29	11	5	3		232	237		64
+P30	9	3	9		215	218		53
+P31	4	8	3		406	414		29
+P32	10	4	7		236	240		67
+P33	6	60	3		1248	1308		37
+P34	1	61	4		1067	1128		10
+P35	10	63	7		1465	1528		69
+P36	3	38	5		1155	1193		32
+P37	8	7	9		481	488		56
+P38	11	3	5		241	244		70
+P39	19	11	8		598	609		94
+P40	13	51	2		1363	1414		76
+P41	4	63	5		1469	1532		33
+P42	5	1	3		40	41		40
+P43	6	8	8		446	454		40
+P44	16	63	6		1467	1530		91
+P45	2	35	8		1097	1132		11
+P46	13	15	10		924	939		78
+P47	8	1	3		58	59		58
+P48	0	37	4		1104	1141		15
+P49	6	2	4		42	44		42
+P50	7	11	1		455	466		47
+P51	5	3	5		198	201		45
+P52	14	69	10		1462	1531		83
+P53	11	7	5		508	515		72
+P54	7	14	5		460	474		49
+P55	1	44	4		1110	1154		16
+P56	18	28	10		1028	1056		97
+P57	16	11	1		596	607		93
+P58	14	43	4		1425	1468		85
+P59	1	53	10		1124	1177		18
+P60	2	3	8		153	156		19
+
+Performance Metrics:
+--------------------------------------------------------------------
+Average Waiting Time:      750.70
+Average Turnaround Time:   776.47
+Average Response Time:     49.12
+CPU Utilization:           100.00%
+Throughput:                0.0388 processes/unit
+Total Execution Time:      1546 time units
+
+
